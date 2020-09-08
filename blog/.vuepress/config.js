@@ -82,13 +82,7 @@ module.exports = {
         "title": "饭团也有春天",
         "desc": "Enjoy when you can, and endure when you must.",
         "email": "690996726@qq.com",
-        "link": "/"
-      },
-      {
-        "title": "vuepress-theme-reco",
-        "desc": "A simple and beautiful vuepress Blog & Doc theme.",
-        "avatar": "/",
-        "link": "/"
+        "link": "www.lijiaw.com/peng/blog"
       }
     ],
     "search": true,
@@ -96,7 +90,7 @@ module.exports = {
     "lastUpdated": "Last Updated",
     "author": "Jabin",
     // "authorAvatar": "",
-    "record": "xxxx",
+    "record": "社会你鹏哥",
     "startYear": "2017"
   },
   "markdown": {
