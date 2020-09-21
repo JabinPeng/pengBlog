@@ -80,7 +80,7 @@ module.exports = {
     "friendLink": [
       {
         "title": "饭团也有春天",
-        "desc": "Enjoy when you can, and endure when you must.",
+        "desc": "前端小学鸡",
         "email": "690996726@qq.com",
         "link": "www.lijiaw.com/peng/blog"
       }
