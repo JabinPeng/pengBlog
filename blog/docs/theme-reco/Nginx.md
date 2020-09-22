@@ -8,6 +8,8 @@ date: 2020-09-21
 ```
 直接下载.tar.gz安装包，地址：https://nginx.org/en/download.html
 ```
+<img :src="$withBase('/assets/image/nginx01.png')" alt="下载安装包">
+
 2. 命令行下载安装包
 ```
   wget -c https://nginx.org/download/nginx-1.18.0.tar.gz

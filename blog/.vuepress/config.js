@@ -63,7 +63,7 @@ module.exports = {
         "",
         "theme",
         "plugin",
-        "api"
+        "Nginx"
       ]
     },
     "type": "blog",
@@ -89,7 +89,7 @@ module.exports = {
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
     "author": "Jabin",
-    // "authorAvatar": "",
+    "authorAvatar": "/avatar.png",
     "record": "社会你鹏哥",
     "startYear": "2017"
   },
