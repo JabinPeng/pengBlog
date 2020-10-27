@@ -9,5 +9,6 @@ module.exports = (options, context) => ({
         FOOTER: footer || []
       };
     },
+    name: 'vuepress-plugin-singboard',
     singnboardMixin: path.resolve(__dirname, "singnboardMixin.js")
   });
