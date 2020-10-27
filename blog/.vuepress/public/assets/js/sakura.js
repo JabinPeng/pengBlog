@@ -1,6 +1,6 @@
 var stop, staticx;
 			var img = new Image();
-			img.src = "樱花.png"; //樱花效果图路径
+			img.src = "/assets/image/sakura.png"; //樱花效果图路径
 
 			function Sakura(x, y, s, r, fn) {
 				this.x = x;

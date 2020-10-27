@@ -18,8 +18,9 @@ module.exports = {
         "content": "width=device-width,initial-scale=1,user-scalable=no"
       }
     ],
-    ["script", { src: "/js/sakura.js" }],
-    ["script", { src: "/js/bodyClick.js" }]
+    ["script", { src: "/assets/js/jquery-1.11.3.min.js" }],
+    ["script", { src: "/assets/js/sakura.js" }],
+    ["script", { src: "/assets/js/bodyClick.js" }]
   ],
   "theme": "reco",
   "themeConfig": {
