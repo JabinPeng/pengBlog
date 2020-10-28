@@ -109,6 +109,21 @@ module.exports = {
       }
     ],
     [
+      'meting', {
+        meting: {
+          server: 'netease',
+          type: 'playlist',
+          auto: 'https://music.163.com/#/my/m/music/playlist?id=507859509',
+          mid: '507859509'
+        },
+        // aplayer: {
+        //   lrcType: 3, // 显示歌词
+        //   // autoplay: true
+        // }
+      }
+    ],
+    ['go-top'],
+    [
       'vuepress-plugin-helper-live2d', {
         // 是否开启控制台日志打印(default: false)
         log: false,
@@ -118,7 +133,7 @@ module.exports = {
           // 模型名称(default: hibiki)
           model: 'koharu',
           display: {
-            position: "left", // 显示位置：left/right(default: 'right')
+            position: "right", // 显示位置：left/right(default: 'right')
             width: 135, // 模型的长度(default: 135)
             height: 300, // 模型的高度(default: 300)
             hOffset: 65, //  水平偏移(default: 65)
@@ -128,7 +143,7 @@ module.exports = {
             show: false // 是否在移动设备上显示(default: false)
           },
           react: {
-            opacity: 0.8 // 模型透明度(default: 0.8)
+            opacity: 1 // 模型透明度(default: 0.8)
           }
         }
       }

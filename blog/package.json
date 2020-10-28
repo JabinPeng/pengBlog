@@ -8,12 +8,15 @@
   },
   "devDependencies": {
     "vuepress": "1.5.0",
+    "vuepress-plugin-go-top": "^1.0.4",
+    "vuepress-plugin-meting": "^0.1.1",
     "vuepress-plugin-ribbon": "^1.0.2",
     "vuepress-theme-reco": "1.5.5"
   },
   "dependencies": {
+    "vuepress-plugin-cat": "^1.0.3",
     "jquery": "^3.5.1",
-    "vue-class-component": "^7.2.3",
+    "vue-class-component": "^7.2.3",        
     "vuepress-plugin-helper-live2d": "^1.0.2"
   },
   "description": ""
