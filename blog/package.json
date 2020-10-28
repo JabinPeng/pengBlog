@@ -14,7 +14,6 @@
     "vuepress-theme-reco": "1.5.5"
   },
   "dependencies": {
-    "vuepress-plugin-cat": "^1.0.3",
     "jquery": "^3.5.1",
     "vue-class-component": "^7.2.3",        
     "vuepress-plugin-helper-live2d": "^1.0.2"

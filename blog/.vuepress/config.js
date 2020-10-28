@@ -20,10 +20,21 @@ module.exports = {
     ],
     ["script", { src: "/assets/js/jquery-1.11.3.min.js" }],
     ["script", { src: "/assets/js/sakura.js" }],
-    ["script", { src: "/assets/js/bodyClick.js" }]
+    ["script", { src: "/assets/js/bodyClick.js" }],
+    ["script", {}, `var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1dd6a922ba031e44241e70062c507bda";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();`]
   ],
   "theme": "reco",
   "themeConfig": {
+    "valineConfig": {
+      appId: 'e6ojaBbYmQvJLNWeBouhonP6-gzGzoHsz',// your appId
+      appKey: '050ScrJoJUW37QqwVwzSmKoX', // your appKey
+    },
     "nav": [
       {
         "text": "随意一点的主页",
@@ -95,6 +106,13 @@ module.exports = {
     "authorAvatar": "/avatar.png",
     "record": "社会你鹏哥",
     "startYear": "2017"
+  },
+  "configureWebpack": {
+    "resolve": {
+      "alias": {
+        '@assets': '/assets'
+      }
+    }
   },
   "markdown": {
     "lineNumbers": true
