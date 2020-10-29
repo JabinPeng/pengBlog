@@ -31,6 +31,7 @@ module.exports = {
   ],
   "theme": "reco",
   "themeConfig": {
+    "mode": 'dark',
     "valineConfig": {
       appId: 'e6ojaBbYmQvJLNWeBouhonP6-gzGzoHsz',// your appId
       appKey: '050ScrJoJUW37QqwVwzSmKoX', // your appKey
