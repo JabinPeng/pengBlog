@@ -56,7 +56,7 @@ module.exports = {
         "items": [
           {
             "text": "七杂八杂",
-            "link": "/docs/theme-reco/"
+            "link": "/docs/theme-reco/filter"
           }
         ]
       },
@@ -75,9 +75,9 @@ module.exports = {
     ],
     "sidebar": {
       "/docs/theme-reco/": [
-        "",
-        "theme",
-        "plugin",
+        "filter",
+        "scrollTemp",
+        "reset",
         "Nginx"
       ]
     },
@@ -119,6 +119,7 @@ module.exports = {
     "lineNumbers": true
   },
   "plugins": [
+    require("./packages/copy/index"),
     [
       "ribbon",
       {

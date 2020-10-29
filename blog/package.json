@@ -7,6 +7,10 @@
     "build": "vuepress build ."
   },
   "devDependencies": {
+    "async-validator": "^1.11.5",
+    "element-ui": "^2.9.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
     "vuepress": "1.5.0",
     "vuepress-plugin-go-top": "^1.0.4",
     "vuepress-plugin-meting": "^0.1.1",
@@ -14,8 +18,9 @@
     "vuepress-theme-reco": "1.5.5"
   },
   "dependencies": {
+    "clipboard": "^2.0.6",
     "jquery": "^3.5.1",
-    "vue-class-component": "^7.2.3",        
+    "vue-class-component": "^7.2.3",
     "vuepress-plugin-helper-live2d": "^1.0.2"
   },
   "description": ""
