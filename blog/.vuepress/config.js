@@ -78,7 +78,8 @@ module.exports = {
         "filter",
         "scrollTemp",
         "reset",
-        "Nginx"
+        "Nginx",
+        "accordion"
       ]
     },
     "type": "blog",
