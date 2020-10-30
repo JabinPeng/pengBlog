@@ -79,7 +79,9 @@ module.exports = {
         "scrollTemp",
         "reset",
         "Nginx",
-        "accordion"
+        "accordion",
+        "loading",
+        "shadow"
       ]
     },
     "type": "blog",

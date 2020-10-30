@@ -208,9 +208,6 @@
         invert: 0,
         opacity: 100
       };
-    },
-    mounted () {
-      console.log(this)
     }
   };
 </script>
