@@ -1,6 +1,6 @@
 ## 💌 我的博客
 
-> 项目地址：[http://lijiaw.com/peng/blog]
+> 项目地址：[http://zpzpup.com/peng/blog]
 
 > 技术站: Vuepress Element-ui
 
@@ -11,10 +11,10 @@
 ## 🏠 项目截图
 
 <p align="center">
-  <img width="900" src="http://www.lijiaw.com/assets/image/blog1.png">
+  <img width="900" src="http://www.zpzpup.com/assets/image/blog1.png">
 </p>
 <p align="center">
-  <img width="900" src="http://www.lijiaw.com/assets/image/blog2.png">
+  <img width="900" src="http://www.zpzpup.com/assets/image/blog2.png">
 </p>
 
 后续还会继续更新文章~
