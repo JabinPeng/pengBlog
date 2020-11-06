@@ -81,7 +81,8 @@ module.exports = {
         "Nginx",
         "accordion",
         "loading",
-        "shadow"
+        "shadow",
+        "flexbox"
       ]
     },
     "type": "blog",
