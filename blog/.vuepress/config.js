@@ -56,7 +56,7 @@ module.exports = {
         "items": [
           {
             "text": "七杂八杂",
-            "link": "/docs/theme-reco/filter"
+            "link": "/docs/theme-reco/HarmonyOS"
           }
         ]
       },
@@ -75,6 +75,7 @@ module.exports = {
     ],
     "sidebar": {
       "/docs/theme-reco/": [
+        "HarmonyOS",
         "filter",
         "scrollTemp",
         "reset",
