@@ -5,6 +5,12 @@
         height:600px;
         .accordion-item{
             list-style: none;
+            position: absolute;
+            .accordion-title {
+                color: #fff;
+                font-size: 18px;
+                z-index: 2;
+            }
         }
     }
 </style>
@@ -63,6 +69,38 @@
                         left: '20px',
                         right: '',
                         bottom: ''
+                    },
+                    {
+                        width: '200px',
+                        height: '250px',
+                        top: '',
+                        left: '300px',
+                        right: '',
+                        bottom: '100px'
+                    },
+                    {
+                        width: '200px',
+                        height: '300px',
+                        top: '',
+                        left: '100px',
+                        right: '',
+                        bottom: '60px'
+                    },
+                    {
+                        width: '300px',
+                        height: '200px',
+                        top: '160px',
+                        left: '',
+                        right: '60px',
+                        bottom: ''
+                    },
+                    {
+                        width: '230px',
+                        height: '160px',
+                        top: '',
+                        left: '',
+                        right: '50px',
+                        bottom: '10px'
                     }
                 ]
             }
