@@ -6,7 +6,7 @@
         .accordion-item{
             list-style: none;
             position: absolute;
-            transition: all .5s;
+            transition: all 1s;
             .accordion-title {
                 color: #fff;
                 font-size: 18px;
@@ -109,10 +109,43 @@
         },
         mounted () {
             this.start()
+            setInterval(() => {
+                this.start()
+            }, 1000)
         },
         methods: {
             start () {
-
+                this.positionList = this.shuffle(this.positionList)
+                this.data =  [
+                    {
+                        title: '背景1',
+                        src: require("../public/assets/image/bg7.jpeg"),
+                    },
+                    {
+                        title: '背景2',
+                        src: require("../public/assets/image/bg10.jpeg")
+                    },
+                    {
+                        title: '背景3',
+                        src: require("../public/assets/image/bg9.jpeg")
+                    },
+                    {
+                        title: '背景4',
+                        src: require("../public/assets/image/bg7.jpeg")
+                    },
+                    {
+                        title: '背景5',
+                        src: require("../public/assets/image/bg10.jpeg")
+                    }
+                ]
+            },
+            shuffle (arr) {
+                let i = arr.length;
+                while (i) {
+                    let j = Math.floor(Math.random() * i--);
+                    [arr[j], arr[i]] = [arr[i], arr[j]];
+                }
+                return arr;
             }
         }
     }
