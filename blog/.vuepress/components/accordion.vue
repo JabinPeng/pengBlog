@@ -41,6 +41,7 @@
         color: #fff;
         font-size: 18px;
         z-index: 2;
+        text-align: center;
       }
     }
   }

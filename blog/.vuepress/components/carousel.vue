@@ -6,10 +6,12 @@
         .accordion-item{
             list-style: none;
             position: absolute;
+            transition: all .5s;
             .accordion-title {
                 color: #fff;
                 font-size: 18px;
                 z-index: 2;
+                text-align: center;
             }
         }
     }
@@ -63,7 +65,7 @@
                 ],
                 positionList: [
                     {
-                        width: '100px',
+                        width: '200px',
                         height: '200px',
                         top: '10px',
                         left: '20px',
@@ -82,7 +84,7 @@
                         width: '200px',
                         height: '300px',
                         top: '',
-                        left: '100px',
+                        left: '30px',
                         right: '',
                         bottom: '60px'
                     },
@@ -105,7 +107,14 @@
                 ]
             }
         },
-        methods: {}
+        mounted () {
+            this.start()
+        },
+        methods: {
+            start () {
+
+            }
+        }
     }
 </script>
 
