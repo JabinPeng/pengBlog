@@ -6,7 +6,7 @@
         .accordion-item{
             list-style: none;
             position: absolute;
-            transition: all 1s;
+            transition: all 3s;
             .accordion-title {
                 color: #fff;
                 font-size: 18px;
