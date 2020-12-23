@@ -76,6 +76,7 @@ module.exports = {
     "sidebar": {
       "/docs/theme-reco/": [
         "HarmonyOS",
+        "genealogy"
         "carousel",
         "filter",
         "scrollTemp",

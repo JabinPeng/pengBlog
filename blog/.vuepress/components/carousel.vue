@@ -111,7 +111,7 @@
             this.start()
             setInterval(() => {
                 this.start()
-            }, 1000)
+            }, 3000)
         },
         methods: {
             start () {
