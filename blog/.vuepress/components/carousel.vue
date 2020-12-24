@@ -6,7 +6,7 @@
         .accordion-item{
             list-style: none;
             position: absolute;
-            transition: all 3s;
+            transition: all 3s ease-out;
             .accordion-title {
                 color: #fff;
                 font-size: 18px;
@@ -21,14 +21,15 @@
     <div class="carousel">
         <ul class="carousel-ul">
             <li class="accordion-item"
-                v-for="(item,index) in data"
+                v-if="flag"
+                v-for="(item,index) in carouselData"
                 :style="{'backgroundImage':`url(${item.src})`,
                 width: positionList[index].width,
                 height: positionList[index].height,
                 top: positionList[index].top,
                 left: positionList[index].left,
                 right: positionList[index].right,
-                bottom: positionList[index].bottom,
+                bottom: positionList[index].bottom
                 }">
                 <p class="accordion-title">{{item.title}}</p>
             </li>
@@ -41,14 +42,14 @@
         name: 'carousel',
         data() {
             return {
-                data: [
+                carouselData: [
                     {
                         title: '背景1',
                         src: require("../public/assets/image/bg7.jpeg"),
                     },
                     {
                         title: '背景2',
-                        src: require("../public/assets/image/bg10.jpeg")
+                        src: require("../public/assets/image/bg8.jpeg")
                     },
                     {
                         title: '背景3',
@@ -56,88 +57,71 @@
                     },
                     {
                         title: '背景4',
-                        src: require("../public/assets/image/bg7.jpeg")
+                        src: require("../public/assets/image/bg10.jpeg")
                     },
                     {
                         title: '背景5',
-                        src: require("../public/assets/image/bg10.jpeg")
+                        src: require("../public/assets/image/bg7.jpeg")
                     }
                 ],
                 positionList: [
                     {
-                        width: '200px',
-                        height: '200px',
-                        top: '10px',
-                        left: '20px',
+                        width: '172px',
+                        height: '500px',
+                        top: '-20px',
+                        left: '60px',
                         right: '',
-                        bottom: ''
+                        bottom: '',
                     },
                     {
-                        width: '200px',
-                        height: '250px',
+                        width: '172px',
+                        height: '500px',
                         top: '',
                         left: '300px',
                         right: '',
-                        bottom: '100px'
+                        bottom: '100px',
                     },
                     {
-                        width: '200px',
-                        height: '300px',
+                        width: '172px',
+                        height: '500px',
                         top: '',
-                        left: '30px',
+                        left: '-150px',
                         right: '',
-                        bottom: '60px'
+                        bottom: '60px',
                     },
                     {
-                        width: '300px',
-                        height: '200px',
-                        top: '160px',
+                        width: '172px',
+                        height: '500px',
+                        top: '-130px',
                         left: '',
-                        right: '60px',
-                        bottom: ''
+                        right: '140px',
+                        bottom: '',
                     },
                     {
-                        width: '230px',
-                        height: '160px',
+                        width: '172px',
+                        height: '500px',
                         top: '',
                         left: '',
-                        right: '50px',
-                        bottom: '10px'
+                        right: '-50px',
+                        bottom: '10px',
                     }
-                ]
+                ],
+                flag: true
             }
         },
         mounted () {
             this.start()
             setInterval(() => {
+                this.flag = false
                 this.start()
-            }, 3000)
+            }, 6000)
         },
         methods: {
             start () {
-                this.positionList = this.shuffle(this.positionList)
-                this.data =  [
-                    {
-                        title: '背景1',
-                        src: require("../public/assets/image/bg7.jpeg"),
-                    },
-                    {
-                        title: '背景2',
-                        src: require("../public/assets/image/bg10.jpeg")
-                    },
-                    {
-                        title: '背景3',
-                        src: require("../public/assets/image/bg9.jpeg")
-                    },
-                    {
-                        title: '背景4',
-                        src: require("../public/assets/image/bg7.jpeg")
-                    },
-                    {
-                        title: '背景5',
-                        src: require("../public/assets/image/bg10.jpeg")
-                    }
-                ]
+                this.flag = true
+                requestAnimationFrame(() => {
+                    this.positionList = this.shuffle(this.positionList)
+                })
             },
             shuffle (arr) {
                 let i = arr.length;

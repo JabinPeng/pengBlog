@@ -1,7 +1,29 @@
+<style scoped lang="scss">
+    .eraItem{
+        display: flex;
+        .eraHeader{
+            width:60px;
+            height:100px;
+            border: 2px solid #333333;
+            text-align: center;
+            line-height: 100px;
+            font-weight: 600;
+        }
+        .eraDetail{
+            flex: 1;
+        }
+    }
+
+</style>
+
+
 <template>
     <main class="era">
         <div class="eraItem" v-for="(item, $index) in eraData" :key="$index">
-            <div class="">
+            <div class="eraHeader">
+
+            </div>
+            <div class="eraDetail">
 
             </div>
         </div>
@@ -10,7 +32,7 @@
 
 <script>
     export default {
-        name: '',
+        name: 'era',
         props: {
             genealogyData: {
                 type: Array,
@@ -85,6 +107,4 @@
     }
 </script>
 
-<style scoped>
 
-</style>
