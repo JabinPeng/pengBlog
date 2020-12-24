@@ -78,6 +78,7 @@ module.exports = {
         "HarmonyOS",
         "genealogy",
         "carousel",
+        "whirligig",
         "filter",
         "scrollTemp",
         "reset",
