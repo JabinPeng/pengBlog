@@ -8,9 +8,15 @@
             text-align: center;
             line-height: 100px;
             font-weight: 600;
+            margin-bottom: 20px;
         }
         .eraDetail{
             flex: 1;
+            .line{
+                width:2px;
+                height:120px;
+                background: #444444;
+            }
         }
     }
 
@@ -21,10 +27,10 @@
     <main class="era">
         <div class="eraItem" v-for="(item, $index) in eraData" :key="$index">
             <div class="eraHeader">
-
+                {{ item }}
             </div>
             <div class="eraDetail">
-
+                <span class="line"></span>
             </div>
         </div>
     </main>

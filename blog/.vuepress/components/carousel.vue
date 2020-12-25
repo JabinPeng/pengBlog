@@ -106,15 +106,19 @@
                         bottom: '10px',
                     }
                 ],
-                flag: true
+                flag: true,
+                timer: null
             }
         },
         mounted () {
             this.start()
-            setInterval(() => {
+            this.timer = setInterval(() => {
                 this.flag = false
                 this.start()
             }, 6000)
+        },
+        destroyed () {
+           clearInterval(this.timer)
         },
         methods: {
             start () {
