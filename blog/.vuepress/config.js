@@ -56,7 +56,7 @@ module.exports = {
         "items": [
           {
             "text": "七杂八杂",
-            "link": "/docs/theme-reco/HarmonyOS"
+            "link": "/docs/jottings/HarmonyOS"
           }
         ]
       },
@@ -74,9 +74,10 @@ module.exports = {
       }
     ],
     "sidebar": {
-      "/docs/theme-reco/": [
+      "/docs/jottings/": [
+        "particles",
         "HarmonyOS",
-        "genealogy",
+        // "genealogy",
         "carousel",
         "whirligig",
         "filter",
