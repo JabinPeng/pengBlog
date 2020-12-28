@@ -7,7 +7,7 @@
             width: 100%;
             height: 260px;
             /*top: 200px;*/
-            background-color: #fff;
+            /*background-color: #fff;*/
             zoom: 2;
         }
 

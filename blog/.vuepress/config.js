@@ -77,7 +77,7 @@ module.exports = {
       "/docs/jottings/": [
         "particles",
         "HarmonyOS",
-        // "genealogy",
+        "genealogy",
         "carousel",
         "whirligig",
         "filter",
