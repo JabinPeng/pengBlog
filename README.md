@@ -17,7 +17,7 @@
   <img width="900" src="http://www.zpzpup.com/assets/image/blog2.png">
 </p>
 
-后续还会继续更新文章~ 更新++++++++
+后续还会继续更新文章~ 更新+++++++++
 
 最近更新了
 
