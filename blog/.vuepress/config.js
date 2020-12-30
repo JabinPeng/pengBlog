@@ -3,6 +3,11 @@ module.exports = {
   "description": "",
   "dest": "public",
   "base": "/peng/blog/",
+  "locales": {
+    '/': {
+      lang: 'zh-CN'
+    }
+  },
   "head": [
     [
       "link",
@@ -41,12 +46,11 @@ module.exports = {
         "text": "随意一点的主页",
         "link": "/",
         "icon": "",
-        "href": "http://zpzpup.com/assets/image/home.svg"
       },
       {
         "text": "莫名其妙的时间轴",
         "link": '/timeline/',
-        "icon": "",
+        "icon": "http://zpzpup.com/assets/image/home.svg",
         "href": "http://zpzpup.com/assets/image/home.svg"
       },
       {
@@ -75,8 +79,8 @@ module.exports = {
     ],
     "sidebar": {
       "/docs/jottings/": [
-        "particles",
         "HarmonyOS",
+        "particles",
         "genealogy",
         "carousel",
         "whirligig",
