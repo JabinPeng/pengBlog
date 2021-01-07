@@ -1,6 +1,6 @@
 ## 💌 我的博客
 
-> 项目地址：[http://zpzpup.com/blog]
+> 项目地址：[http://www.zpzpup.com/blog]
 
 > 技术站: Vuepress Element-ui Vuepress-threme-reco
 
