@@ -21,7 +21,7 @@ heroTextStyle: {
 # heroImage: ''
 bgImage: '/gd1.jpg'
 bgImageStyle: {
-  height: '900px'
+  height: '1000px'
 }
 isShowTitleInHome: false
 

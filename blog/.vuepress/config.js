@@ -2,7 +2,7 @@ module.exports = {
   "title": "饭团也有春天",
   "description": "",
   "dest": "public",
-  "base": "/peng/blog/",
+  "base": "/blog/",
   "locales": {
     '/': {
       lang: 'zh-CN'
@@ -81,7 +81,7 @@ module.exports = {
       "/docs/jottings/": [
         "HarmonyOS",
         "particles",
-        "genealogy",
+        // "genealogy",
         "carousel",
         "whirligig",
         "filter",
