@@ -153,6 +153,16 @@ module.exports = {
     ],
     ['go-top'],
     [
+      "dynamic-title",
+      {
+        showIcon: "/favicon.ico",
+        showText: "欢迎回来 O(∩_∩)O~",
+        hideIcon: "/favicon.ico",
+        hideText: "失联中。。。快回来~",
+        recoverTime: 2000
+      }
+    ],
+    [
       'vuepress-plugin-helper-live2d', {
         // 是否开启控制台日志打印(default: false)
         log: false,

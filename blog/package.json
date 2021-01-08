@@ -12,6 +12,7 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "vuepress": "1.5.0",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
     "vuepress-plugin-go-top": "^1.0.4",
     "vuepress-plugin-meting": "^0.1.1",
     "vuepress-plugin-ribbon": "^1.0.2",
