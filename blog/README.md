@@ -19,9 +19,10 @@ heroTextStyle: {
 #   borderRadius: '1rem',
 # }
 # heroImage: ''
-bgImage: '/gd1.jpg'
+bgImage: '/gd01.jpg'
 bgImageStyle: {
-  height: '1000px'
+  height: '1000px',
+  backgroundSize: '100% 100%'
 }
 isShowTitleInHome: false
 
