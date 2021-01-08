@@ -106,7 +106,7 @@ module.exports = {
         "title": "饭团也有春天",
         "desc": "前端小学鸡",
         "email": "690996726@qq.com",
-        "link": "/peng/blog"
+        "link": "www.zpzpup.com/blog"
       }
     ],
     "search": true,

@@ -1,11 +1,7 @@
 ---
 home: true
 heroText: Peng Blog
-tagline: 我是一名前端 爱吃小熊饼干
-          上班只为下班 工资刚够早餐
-          每晚都要加班 只求线上平安
-          头发快要掉完 前端真的好难
-          只是无名前端 写代码的憨憨
+tagline: 一个被程序员生涯耽误的优秀厨子
 heroTextStyle: {
   color: '#fff'
 }
