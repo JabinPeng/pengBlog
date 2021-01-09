@@ -115,7 +115,7 @@ module.exports = {
     "author": "Jabin",
     "authorAvatar": "/avatar.png",
     "record": "社会你鹏哥",
-    "startYear": "2017"
+    "startYear": "2018"
   },
   "configureWebpack": {
     "resolve": {
