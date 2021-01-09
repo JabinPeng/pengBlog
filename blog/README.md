@@ -18,7 +18,6 @@ heroTextStyle: {
 bgImage: '/gd01.jpg'
 bgImageStyle: {
   height: '1000px',
-  backgroundSize: '100% 100%'
 }
 isShowTitleInHome: false
 
