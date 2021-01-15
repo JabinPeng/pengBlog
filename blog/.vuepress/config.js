@@ -107,6 +107,12 @@ module.exports = {
         "desc": "前端小学鸡",
         "email": "690996726@qq.com",
         "link": "www.zpzpup.com/blog"
+      },
+      {
+        "title": "午后南杂",
+        "desc": "一款简洁而优雅的 vuepress 博客 & 文档 主题。",
+        "email": "无",
+        "link": "https://vuepress-theme-reco.recoluan.com/"
       }
     ],
     "search": true,
@@ -114,7 +120,7 @@ module.exports = {
     "lastUpdated": "Last Updated",
     "author": "Jabin",
     "authorAvatar": "/avatar.png",
-    "record": "社会你鹏哥",
+    "record": "鄂ICP备18004957号-2",
     "startYear": "2018"
   },
   "configureWebpack": {
