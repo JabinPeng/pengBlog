@@ -16,6 +16,7 @@
     "vuepress-plugin-go-top": "^1.0.4",
     "vuepress-plugin-meting": "^0.1.1",
     "vuepress-plugin-ribbon-animation": "^1.1.2",
+    "vuepress-plugin-sakura": "^1.0.1",
     "vuepress-theme-reco": "1.5.5"
   },
   "dependencies": {

@@ -24,7 +24,6 @@ module.exports = {
       }
     ],
     ["script", { src: "/assets/js/jquery-1.11.3.min.js" }],
-    ["script", { src: "/assets/js/sakura.js" }],
     ["script", { src: "/assets/js/bodyClick.js" }],
     ["script", {}, `var _hmt = _hmt || [];
     (function() {
@@ -72,7 +71,7 @@ module.exports = {
             "text": "GitHub",
             "link": "https://github.com/JabinPeng",
             "icon": "",
-            "href": "http://lijiaw.com/assets/image/home.svg"
+            "href": "http://zpzpup.com/assets/image/home.svg"
           }
         ]
       }
@@ -135,10 +134,19 @@ module.exports = {
   },
   "plugins": [
     require("./packages/copy/index"),
+    ["sakura", {
+      num: 20,  // 默认数量
+      show: true,
+      zIndex: -1,
+      img: {
+        replace: false,  // false 默认图 true 换图 需要填写httpUrl地址
+        httpUrl: 'http://www.zpzpup.com/assets/image/sakura.png'     // 绝对路径
+      }
+    }],
     ["ribbon-animation", {
       size: 90,   // 默认数据
       opacity: 0.3,  //  透明度
-      zIndex: -1,   //  层级
+      zIndex: 1,   //  层级
       opt: {
         // 色带HSL饱和度
         colorSaturation: "80%",
