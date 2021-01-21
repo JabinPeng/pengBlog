@@ -133,7 +133,7 @@ module.exports = {
     "lineNumbers": true
   },
   "plugins": [
-    require("./packages/copy/index"),
+    require("./packages/copy/index.js"),
     ["sakura", {
       num: 20,  // 默认数量
       show: true,
