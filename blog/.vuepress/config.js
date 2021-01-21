@@ -137,7 +137,7 @@ module.exports = {
     ["sakura", {
       num: 20,  // 默认数量
       show: true,
-      zIndex: -1,
+      zIndex: 2,
       img: {
         replace: false,  // false 默认图 true 换图 需要填写httpUrl地址
         httpUrl: 'http://www.zpzpup.com/assets/image/sakura.png'     // 绝对路径
