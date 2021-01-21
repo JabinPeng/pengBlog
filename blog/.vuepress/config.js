@@ -101,11 +101,18 @@ module.exports = {
       }
     },
     "friendLink": [
+      // {
+      //   "title": "饭团也有春天",
+      //   "desc": "没有梦想，也能远方",
+      //   "email": "690996726@qq.com",
+      //   "link": "www.zpzpup.com/blog"
+      // },
       {
-        "title": "饭团也有春天",
-        "desc": "前端小学鸡",
-        "email": "690996726@qq.com",
-        "link": "www.zpzpup.com/blog"
+        "title": "Lucifer",
+        "desc": "Everything can be expected in the future.",
+        "email": "2050180797@qq.com",
+        "logo": "https://nightliuguoxing-github-io.vercel.app/img/avatar.jpg",
+        "link": "https://love.liuguoxing.top"
       },
       {
         "title": "午后南杂",
@@ -135,7 +142,7 @@ module.exports = {
   "plugins": [
     require("./packages/copy/index.js"),
     ["sakura", {
-      num: 20,  // 默认数量
+      num: 30,  // 默认数量
       show: true,
       zIndex: 2,
       img: {
