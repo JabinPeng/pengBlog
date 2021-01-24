@@ -80,6 +80,7 @@ module.exports = {
       "/docs/jottings/": [
         "HarmonyOS",
         "DOM",
+        "BOM",
         "particles",
         // "genealogy",
         "carousel",
