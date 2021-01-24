@@ -79,6 +79,7 @@ module.exports = {
     "sidebar": {
       "/docs/jottings/": [
         "HarmonyOS",
+        "DOM",
         "particles",
         // "genealogy",
         "carousel",
