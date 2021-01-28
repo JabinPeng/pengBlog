@@ -59,7 +59,7 @@ module.exports = {
         "items": [
           {
             "text": "七杂八杂",
-            "link": "/docs/jottings/HarmonyOS"
+            "link": "/docs/jottings/mobile"
           }
         ]
       },
@@ -78,6 +78,7 @@ module.exports = {
     ],
     "sidebar": {
       "/docs/jottings/": [
+        "mobile",
         "HarmonyOS",
         "DOM",
         "BOM",
