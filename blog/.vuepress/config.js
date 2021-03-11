@@ -36,6 +36,7 @@ module.exports = {
   "theme": "reco",
   "themeConfig": {
     "mode": 'dark',
+    "noFoundPageByTencent": true,
     "valineConfig": {
       appId: 'e6ojaBbYmQvJLNWeBouhonP6-gzGzoHsz',// your appId
       appKey: '050ScrJoJUW37QqwVwzSmKoX', // your appKey
@@ -60,6 +61,10 @@ module.exports = {
           {
             "text": "七杂八杂",
             "link": "/docs/jottings/mobile"
+          },
+          {
+            "text": "Vue3.0",
+            "link": "/docs/Vue/ref"
           }
         ]
       },
@@ -79,6 +84,7 @@ module.exports = {
     "sidebar": {
       "/docs/jottings/": [
         "mobile",
+        "Git",
         "HarmonyOS",
         "DOM",
         "BOM",
@@ -94,6 +100,31 @@ module.exports = {
         "loading",
         "shadow",
         "flexbox"
+      ],
+      "/docs/Vue/": [
+        {
+          "title": "Vue3.0",
+          "collapsable": false,
+          "children": [
+              'ref',
+              'asyncComponent',
+              'attribute',
+              'directive',
+              'v-is',
+              'Data',
+              'event',
+              'filters',
+              'template',
+              'funComponent',
+              'API',
+              'renderFun',
+              'slot',
+              'animationClass',
+              'v-model',
+              'v-if&v-for',
+              'v-bind'
+          ]
+        }
       ]
     },
     "type": "blog",
