@@ -65,6 +65,10 @@ module.exports = {
           {
             "text": "Vue3.0",
             "link": "/docs/Vue/ref"
+          },
+          {
+            "text": "吃吃吃",
+            "link": "/docs/delicacys/无油捞汁粉丝"
           }
         ]
       },
