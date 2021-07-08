@@ -64,7 +64,11 @@ module.exports = {
           },
           {
             "text": "Vue3.0",
-            "link": "/docs/Vue/ref"
+            "link": "/docs/vue/ref"
+          },
+          {
+            "text": "Nuxt",
+            "link": "/docs/nuxt/asyncData"
           },
           {
             "text": "吃吃吃",
