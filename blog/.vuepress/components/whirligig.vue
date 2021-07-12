@@ -195,12 +195,12 @@
         data() {
             return {
                 imgSrc: [
-                    require("../public/assets/image/bg1.jpg"),
-                    require("../public/assets/image/bg2.jpg"),
-                    require("../public/assets/image/bg3.jpg"),
-                    require("../public/assets/image/bg4.jpg"),
-                    require("../public/assets/image/bg5.jpg"),
-                    require("../public/assets/image/bg6.jpg")
+                    "https://www.zpzpup.com/assets/image/example/bg1.jpg",
+                    "https://www.zpzpup.com/assets/image/example/bg2.jpg",
+                    "https://www.zpzpup.com/assets/image/example/bg3.jpg",
+                    "https://www.zpzpup.com/assets/image/example/bg4.jpg",
+                    "https://www.zpzpup.com/assets/image/example/bg5.jpg",
+                    "https://www.zpzpup.com/assets/image/example/bg6.jpg"
                 ]
             }
         },

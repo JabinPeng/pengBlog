@@ -5,7 +5,7 @@ date: 2021-02-22
 
 ## 常用命令
 
-<img :src="$withBase('/assets/image/git.png')" alt="下载安装包">
+<img src="https://www.zpzpup.com/assets/image/npm/git.png')" alt="下载安装包">
 
 Workspace：工作区
 

@@ -45,23 +45,23 @@
                 carouselData: [
                     {
                         title: '背景1',
-                        src: require("../public/assets/image/bg7.jpeg"),
+                        src: "https://www.zpzpup.com/assets/image/example/bg7.jpeg",
                     },
                     {
                         title: '背景2',
-                        src: require("../public/assets/image/bg8.jpeg")
+                        src: "https://www.zpzpup.com/assets/image/example/bg8.jpeg"
                     },
                     {
                         title: '背景3',
-                        src: require("../public/assets/image/bg9.jpeg")
+                        src: "https://www.zpzpup.com/assets/image/example/bg9.jpeg"
                     },
                     {
                         title: '背景4',
-                        src: require("../public/assets/image/bg10.jpeg")
+                        src: "https://www.zpzpup.com/assets/image/example/bg10.jpeg"
                     },
                     {
                         title: '背景5',
-                        src: require("../public/assets/image/bg7.jpeg")
+                        src: "https://www.zpzpup.com/assets/image/example/bg7.jpeg"
                     }
                 ],
                 positionList: [

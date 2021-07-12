@@ -8,7 +8,7 @@ date: 2020-09-21
 ```
 直接下载.tar.gz安装包，地址：https://nginx.org/en/download.html
 ```
-<img :src="$withBase('/assets/image/nginx01.png')" alt="下载安装包">
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx01.png" alt="下载安装包">
 
 2. 命令行下载安装包
 ```
@@ -28,11 +28,11 @@ cd nginx-1.18.0
 ```
 ./configure
 ```
-<img :src="$withBase('/assets/image/nginx02.png')" alt="使用默认配置">
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx02.png" alt="使用默认配置">
 
 错误为：./configure: error: the HTTP rewrite module requires the PCRE library.
 
-<img :src="$withBase('/assets/image/nginx-err01.png')" alt="错误">
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx-err01.png" alt="错误">
 
 安装pcre-devel解决问题
 
@@ -80,16 +80,16 @@ yum -y install openssl openssl-devel
 make
 make install
 ```
-<img :src="$withBase('/assets/image/nginx03.png')">
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx03.png">
 
-<img :src="$withBase('/assets/image/nginx04.png')">
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx04.png">
 
 查找安装路径
 
 ```
 whereis nginx
 ```
-<img :src="$withBase('/assets/image/nginx05.png')">
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx05.png">
 
 启动、停止nginx
 
@@ -102,7 +102,7 @@ cd /usr/local/nginx/sbin/
 ./nginx -s quit:此方式停止步骤是待nginx进程处理任务完毕进行停止。
 ./nginx -s stop:此方式相当于先查出nginx进程id再使用kill命令强制杀掉进程。
 ```
-<img :src="$withBase('/assets/image/nginx06.png')">
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx06.png">
 
 查询nginx进程：
 
@@ -120,7 +120,7 @@ ps aux|grep nginx
 ./nginx
 ```
 
-<img :src="$withBase('/assets/image/nginx09.png')">
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx09.png">
 
 2.重新加载配置文件：
 当 nginx的配置文件 nginx.conf 修改后，要想让配置生效需要重启 nginx，使用-s reload不用先停止 ngin x再启动 nginx 即可将配置信息在 nginx 中生效，如下：
@@ -143,7 +143,7 @@ ps aux|grep nginx
 
 5.:wq 报存退出
 
-<img :src="$withBase('/assets/image/nginx10.png')">
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx10.png">
 
 6.设置执行权限：
 chmod 755 rc.local

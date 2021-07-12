@@ -7,7 +7,7 @@ date: 2020-12-22
 
 先贴个原型图
 
-<img :src="$withBase('/assets/image/genealogy.png')" alt="下载安装包">
+<img src="https://www.zpzpup.com/assets/image/genealogy.png" alt="下载安装包">
 
 
 下面就开始尝试写一下

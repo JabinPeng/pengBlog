@@ -13,7 +13,7 @@ module.exports = {
       "link",
       {
         "rel": "icon",
-        "href": "/favicon.ico"
+        "href": "https://www.zpzpup.com/assets/image/favicon.ico"
       }
     ],
     [
@@ -167,7 +167,7 @@ module.exports = {
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
     "author": "Jabin",
-    "authorAvatar": "/avatar.png",
+    "authorAvatar": "https://www.zpzpup.com/assets/image/avatar.png",
     "record": "鄂ICP备18004957号-2",
     "startYear": "2018"
   },
