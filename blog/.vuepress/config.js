@@ -68,7 +68,7 @@ module.exports = {
           },
           {
             "text": "Nuxt",
-            "link": "/docs/nuxt/asyncData"
+            "link": "/docs/nuxt/introduction"
           },
           {
             "text": "吃吃吃",
@@ -131,6 +131,17 @@ module.exports = {
               'v-model',
               'v-if&v-for',
               'v-bind'
+          ]
+        }
+      ],
+      "/docs/Nuxt/": [
+        {
+          "title": "Nuxt",
+          "collapsable": false,
+          "children": [
+              'introduction',
+              'asyncData',
+              'context'
           ]
         }
       ]
@@ -226,8 +237,8 @@ module.exports = {
         meting: {
           server: 'netease',
           type: 'playlist',
-          auto: 'https://music.163.com/song?id=1844442265&userid=360514259',
-          mid: '360514259'
+          // auto: 'https://music.163.com/playlist?id=507859509&userid=360514259',
+          mid: '1844442265'
         },
         // aplayer: {
         //   lrcType: 3, // 显示歌词
