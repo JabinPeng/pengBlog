@@ -235,10 +235,10 @@ module.exports = {
     [
       'meting', {
         meting: {
-          server: 'netease',
+          server: 'tencent',
           type: 'playlist',
-          // auto: 'https://music.163.com/playlist?id=507859509&userid=360514259',
-          mid: '1844442265'
+          auto: 'https://y.qq.com/n/ryqq/playlist/2523829103',
+          // mid: '1844442265'
         },
         // aplayer: {
         //   lrcType: 3, // 显示歌词
