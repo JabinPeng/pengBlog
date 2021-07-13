@@ -71,4 +71,22 @@ export const mutations = {
   }
 }
 ```
+使用方法：
+```javascript
+export default ({app, route, params, query, store}) => {
+    // store.***
+    // store.todolist.***
+}
+```
 
+
+5. redirect 这个api可以理解为路由跳转工具 
+使用方法：
+```javascript
+export default ({app, route, params, query, store, redirect}) => {
+    // redirect([status,] path [, query])
+    redirect('/')
+ }
+```
+
+还没写完 今天先写到这~
