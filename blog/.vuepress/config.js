@@ -226,8 +226,8 @@ module.exports = {
         meting: {
           server: 'netease',
           type: 'playlist',
-          auto: 'https://music.163.com/#/my/m/music/playlist?id=507859509',
-          mid: '507859509'
+          auto: 'https://music.163.com/song?id=1844442265&userid=360514259',
+          mid: '360514259'
         },
         // aplayer: {
         //   lrcType: 3, // 显示歌词
