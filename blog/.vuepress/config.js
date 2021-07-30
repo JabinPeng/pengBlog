@@ -23,14 +23,7 @@ module.exports = {
         "content": "width=device-width,initial-scale=1,user-scalable=no"
       }
     ],
-    ["script", { src: "/assets/js/bodyClick.js" }],
-    ["script", {}, `var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?1dd6a922ba031e44241e70062c507bda";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();`]
+    ["script", { src: "/assets/js/bodyClick.js" }]
   ],
   "theme": "reco",
   "themeConfig": {
@@ -45,18 +38,16 @@ module.exports = {
       {
         "text": "随意一点的主页",
         "link": "/",
-        "icon": "",
+        "icon": ""
       },
       {
         "text": "莫名其妙的时间轴",
         "link": '/timeline/',
-        "icon": "http://zpzpup.com/assets/image/home.svg",
-        "href": "http://zpzpup.com/assets/image/home.svg"
+        "icon": "http://zpzpup.com/assets/image/home.svg"
       },
       {
         "text": "很厉害的文章",
         "icon": "",
-        "href": "http://zpzpup.com/assets/image/home.svg",
         "items": [
           {
             "text": "七杂八杂",
@@ -83,8 +74,7 @@ module.exports = {
           {
             "text": "GitHub",
             "link": "https://github.com/JabinPeng",
-            "icon": "",
-            "href": "https://zpzpup.com/assets/image/home.svg"
+            "icon": ""
           }
         ]
       }
