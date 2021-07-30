@@ -23,7 +23,6 @@ module.exports = {
         "content": "width=device-width,initial-scale=1,user-scalable=no"
       }
     ],
-    ["script", { src: "/assets/js/jquery-1.11.3.min.js" }],
     ["script", { src: "/assets/js/bodyClick.js" }],
     ["script", {}, `var _hmt = _hmt || [];
     (function() {
@@ -193,7 +192,7 @@ module.exports = {
     "lineNumbers": true
   },
   "plugins": [
-    require("./packages/copy/index.js"),
+    ["Copy"],
     ["sakura", {
       num: 30,  // 默认数量
       show: true,
