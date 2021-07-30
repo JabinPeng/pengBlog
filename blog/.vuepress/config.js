@@ -36,6 +36,7 @@ module.exports = {
   "themeConfig": {
     "mode": 'dark',
     "noFoundPageByTencent": true,
+    "logo": 'https://www.zpzpup.com/assets/image/avatar.png',
     "valineConfig": {
       appId: 'e6ojaBbYmQvJLNWeBouhonP6-gzGzoHsz',// your appId
       appKey: '050ScrJoJUW37QqwVwzSmKoX', // your appKey
@@ -83,7 +84,7 @@ module.exports = {
             "text": "GitHub",
             "link": "https://github.com/JabinPeng",
             "icon": "",
-            "href": "http://zpzpup.com/assets/image/home.svg"
+            "href": "https://zpzpup.com/assets/image/home.svg"
           }
         ]
       }
@@ -157,7 +158,7 @@ module.exports = {
       //   "title": "饭团也有春天",
       //   "desc": "没有梦想，也能远方",
       //   "email": "690996726@qq.com",
-      //   "link": "www.zpzpup.com/blog"
+      //   "link": "https://www.zpzpup.com/blog"
       // },
       {
         "title": "Lucifer",
@@ -192,7 +193,6 @@ module.exports = {
     "lineNumbers": true
   },
   "plugins": [
-    ["Copy"],
     ["sakura", {
       num: 30,  // 默认数量
       show: true,
