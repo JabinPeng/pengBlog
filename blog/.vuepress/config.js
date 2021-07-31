@@ -38,12 +38,10 @@ module.exports = {
       {
         "text": "随意一点的主页",
         "link": "/",
-        "icon": ""
       },
       {
         "text": "莫名其妙的时间轴",
-        "link": '/timeline/',
-        "icon": "http://zpzpup.com/assets/image/home.svg"
+        "link": '/timeline/'
       },
       {
         "text": "很厉害的文章",
