@@ -38,14 +38,16 @@ module.exports = {
       {
         "text": "随意一点的主页",
         "link": "/",
+        "icon": "reco-home"
       },
       {
         "text": "莫名其妙的时间轴",
-        "link": '/timeline/'
+        "link": "/timeline/",
+        "icon": "reco-date"
       },
       {
         "text": "很厉害的文章",
-        "icon": "",
+        "icon": "reco-document",
         "items": [
           {
             "text": "七杂八杂",
@@ -72,7 +74,7 @@ module.exports = {
           {
             "text": "GitHub",
             "link": "https://github.com/JabinPeng",
-            "icon": ""
+            "icon": "reco-github"
           }
         ]
       }
