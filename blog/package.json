@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "reco_luan",
   "scripts": {
-    "dev": "vuepress dev .",
+    "dev": "vuepress dev . --temp .temp",
     "build": "vuepress build ."
   },
   "devDependencies": {

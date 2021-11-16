@@ -81,6 +81,7 @@ module.exports = {
     ],
     "sidebar": {
       "/docs/jottings/": [
+        "vueBuild",
         "mobile",
         "Git",
         "HarmonyOS",
