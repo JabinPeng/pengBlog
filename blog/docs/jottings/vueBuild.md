@@ -24,3 +24,23 @@ sudo apt-get install nginx
 # 启动
 sudo service nginx start
 ```
+
+启动后，正常情况下，直接访问 http://服务器ip 或 http://域名 （本文测试用的服务器没有配置域名，所以用ip，就本文而言，域名和ip没有太大区别）应该就能看到nginx服务器的默认页面了——如果访问不到，有可能是你的云服务器默认的http服务端口（80端口）没有对外开放，在服务器安全组配置一下即可。
+
+## 3、 了解nginx: 修改nginx配置，让nginx服务器代理我们创建的文件
+
+查看nginx的配置，linux系统下的配置文件通常会存放在/etc目录下，nginx的配置文件就在/etc/nginx文件夹，打开文件/etc/nginx/sites-available/default（nginx可以有多个配置文件，通常我们配置nginx也是修改这个文件）：
+
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx01.png" alt="下载安装包">
+
+可以看到默认情况下，nginx代理的根目录是/var/www/html，输入 http://服务器ip会访问这个文件夹下的文件，会根据index的配置值来找默认访问的文件，比如index.html、index.htm之类。
+
+我们可以更改root的值来修改nginx服务代理的文件夹：
+
+### 1、创建文件夹/www，并创建index.html，写入"Hello world"字符串
+
+```
+mkdir /www
+echo 'Hello world' > /www/index.html
+```
+
