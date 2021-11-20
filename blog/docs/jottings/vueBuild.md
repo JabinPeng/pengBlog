@@ -44,3 +44,13 @@ mkdir /www
 echo 'Hello world' > /www/index.html
 ```
 
+### 2、修改root值为 /www
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx01.png" alt="下载安装包">
+
+
+### 3、sudo nginx -t 检查nginx配置是否正确
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx01.png" alt="下载安装包">
+
+### 4、加载nginx配置：sudo nginx -s reload
+再次访问页面，发现页面内容已经变成了我们创建的index.html:
+<img src="https://www.zpzpup.com/assets/image/nginx/nginx01.png" alt="下载安装包">
