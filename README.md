@@ -11,10 +11,10 @@
 ## 🏠 项目截图
 
 <p align="center">
-  <img width="900" src="http://www.zpzpup.com/assets/image/blog1.png">
+  <img width="900" src="https://www.zpzpup.com/assets/image/blog1.png">
 </p>
 <p align="center">
-  <img width="900" src="http://www.zpzpup.com/assets/image/blog2.png">
+  <img width="900" src="https://www.zpzpup.com/assets/image/blog2.png">
 </p>
 
 后续还会继续更新文章~ 更新++++++++++
