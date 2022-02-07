@@ -189,8 +189,8 @@ module.exports = {
       show: true,
       zIndex: 2,
       img: {
-        replace: true,  // false 默认图 true 换图 需要填写httpUrl地址
-        httpUrl: 'http://www.zpzpup.com/assets/image/sakura.png'     // 绝对路径
+        replace: false,  // false 默认图 true 换图 需要填写httpUrl地址
+        httpUrl: 'https://www.zpzpup.com/assets/image/sakura.png'     // 绝对路径
       }
     }],
     ["ribbon-animation", {
