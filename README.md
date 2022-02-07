@@ -2,7 +2,7 @@
 
 > 项目地址：[https://www.zpzpup.com/blog]
 
-> 技术站: Vuepress Element-ui Vuepress-threme-reco
+> 技术站: Vuepress Vuepress-threme-reco
 
 ## 📢 说明
 
@@ -19,7 +19,16 @@
 
 后续还会继续更新文章~ 更新++++++++++
 
+启动方法：
+```
+cnpm install  // 建议使用cnpm
+```
+```
+npm run dev  
+```
+
 最近更新了
+
 
 喜欢的可以点个 ⭐ star 感激不尽 😁😁😁
 
