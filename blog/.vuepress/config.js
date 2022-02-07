@@ -185,7 +185,7 @@ module.exports = {
   },
   "plugins": [
     ["sakura", {
-      num: 30,  // 默认数量
+      num: 10,  // 默认数量
       show: true,
       zIndex: 2,
       img: {
