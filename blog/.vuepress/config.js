@@ -243,7 +243,7 @@ module.exports = {
           // 模型名称(default: hibiki)
           model: 'koharu',
           display: {
-            position: "right", // 显示位置：left/right(default: 'right')
+            position: "left", // 显示位置：left/right(default: 'right')
             width: 135, // 模型的长度(default: 135)
             height: 300, // 模型的高度(default: 300)
             hOffset: 65, //  水平偏移(default: 65)
