@@ -1,3 +1,4 @@
-node_modules/
-public
+/node_modules/
+/public
 .temp
+.DS_Store
