@@ -1,8 +1,8 @@
 # Dependency directories
-node_modules/
+blog/node_modules/
 # build public
-public/
+blog/public/
 # build temp
-.temp
+blog/.temp
 # macOS
 .DS_Store
