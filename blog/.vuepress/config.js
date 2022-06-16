@@ -25,7 +25,7 @@ module.exports = {
     ],
     ["script", { src: "/assets/js/bodyClick.js" }]
   ],
-  "theme": "reco",
+  "theme": "jabinblog",
   "themeConfig": {
     "mode": 'dark',
     "noFoundPageByTencent": true,
