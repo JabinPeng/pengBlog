@@ -21,7 +21,7 @@
 
 启动方法：
 ```
-cnpm install  // 建议使用cnpm
+npm install   // cnpm install
 ```
 ```
 npm run dev  
