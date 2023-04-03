@@ -1,7 +1,7 @@
 $fontColor: rgba(37, 37, 37, .9);
 
 .nav {
-  padding: 65px 74px 65px 78px;
+  padding: 40px 74px 40px 78px;
   position: fixed;
   top: 0;
   left: 0;
@@ -151,7 +151,7 @@ $fontColor: rgba(37, 37, 37, .9);
 
   @media screen and (max-width: 992px) {
     & {
-      padding: 6px 20px 6px 25px;
+      padding: 20px 20px 20px 25px;
     }
 
     ul.horizontal {

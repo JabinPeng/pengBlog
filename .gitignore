@@ -5,6 +5,11 @@ blog/public/
 # build temp
 blog/.temp
 
+# Dependency directories
+index/node_modules/
+# build public
+index/dist/
+
 # Logs
 logs
 *.log

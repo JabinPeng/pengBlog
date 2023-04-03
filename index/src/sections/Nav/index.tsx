@@ -68,7 +68,7 @@ const Nav: FC = () => {
               })}
               onClick={() => {
                 setVerticalVisible(false);
-                scroll(nav.toEl);
+                scroll(nav.toEl, nav.left);
               }}
             >
               {nav.text}

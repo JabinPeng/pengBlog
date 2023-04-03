@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import lottie, { AnimationConfigWithData } from "lottie-web";
 
 const useLottie = (path: string, extra?: AnimationConfigWithData) => {
-  const lottieRef = useRef<HTMLDivElement | null>(null);
+  let lottieRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (lottieRef.current) {
@@ -14,6 +14,9 @@ const useLottie = (path: string, extra?: AnimationConfigWithData) => {
         autoplay: true,
         ...extra,
       });
+    }
+    return () => {
+      lottieRef.current = null
     }
   }, []);
 
