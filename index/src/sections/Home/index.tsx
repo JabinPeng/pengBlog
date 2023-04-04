@@ -5,15 +5,17 @@ import Fade from "react-reveal/Fade"
 import useTyped from '@/hooks/useTyped'
 import useLottie from "@/hooks/useLottie"
 import {arrowDownLottie, fireLottie} from './constants'
+import classNames from "classnames";
+import banner from '@/assets/images/03e6d39b53555.webp'
 
-type Props = {}
 
 const strings = ["聊聊技术。", "吹吹水。", "打打游戏。"];
 
-const Home = (props: Props) => {
+const Home = () => {
   const el = useTyped(strings, { loop: true });
   const arrowDownLottieRef = useLottie(arrowDownLottie);
   const fireRef = useLottie(fireLottie);
+  const fireRef2 = useLottie(fireLottie);
 
   const next = () => {
     const $about = document.querySelector("#about");
@@ -25,7 +27,7 @@ const Home = (props: Props) => {
   return (
     <section id="home" className={styles.home}>
       <Row className={styles.content}>
-        <Col span={24} md={15} className={styles.intro}>
+        <Col span={24} md={12} className={styles.intro}>
           <p>我是Jabin，</p>
           <p>
             一个 前端工程师，写{" "}
@@ -37,11 +39,14 @@ const Home = (props: Props) => {
             <span className={styles.sometime} ref={el} />
           </p>
         </Col>
-        <Col span={24} md={9} className={styles.bannerBox}>
+        <Col span={24} md={12} className={styles.bannerBox}>
           <Fade bottom>
-           <div className={styles.banner}></div>
-           <div className={styles.fire} ref={fireRef}></div>
-           {/* <div className={styles.fire2} ref={fireRef}></div> */}
+           <div className={styles.banner}>
+            <img src={banner} alt="airship" />
+            <div className={styles.fire} ref={fireRef}></div>
+            <div className={classNames(styles.fire, styles.fire2)} ref={fireRef2}></div>
+           </div>
+
           </Fade>
         </Col>
 

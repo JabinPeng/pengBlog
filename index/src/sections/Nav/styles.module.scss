@@ -11,7 +11,7 @@ $fontColor: rgba(37, 37, 37, .9);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
 
   .title {
     flex: 1;
@@ -202,15 +202,3 @@ $fontColor: rgba(37, 37, 37, .9);
   }
 }
 
-@keyframes navOut {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(60px); // 放大
-    border-color: transparent; // 透明
-  }
-}
-
-@keyframes navIn {}
