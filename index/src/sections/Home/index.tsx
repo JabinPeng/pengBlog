@@ -6,7 +6,7 @@ import useTyped from '@/hooks/useTyped'
 import useLottie from "@/hooks/useLottie"
 import {arrowDownLottie, fireLottie} from './constants'
 import classNames from "classnames";
-import banner from '@/assets/images/03e6d39b53555.webp'
+// import banner from '@/assets/images/03e6d39b53555.webp'
 
 
 const strings = ["聊聊技术。", "吹吹水。", "打打游戏。"];
@@ -42,9 +42,8 @@ const Home = () => {
         <Col span={24} md={12} className={styles.bannerBox}>
           <Fade bottom>
            <div className={styles.banner}>
-            <img src={banner} alt="airship" />
-            <div className={styles.fire} ref={fireRef}></div>
-            <div className={classNames(styles.fire, styles.fire2)} ref={fireRef2}></div>
+              <div className={styles.fire} ref={fireRef}></div>
+              <div className={classNames(styles.fire, styles.fire2)} ref={fireRef2}></div>
            </div>
 
           </Fade>

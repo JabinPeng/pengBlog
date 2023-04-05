@@ -5,7 +5,8 @@
   height: calc(100vh - 120px);
   background-color: #fff;
   transform: translateZ(0);
-  .content{
+
+  .content {
     padding: 0 58px;
     border-radius: 20px;
     // background-color: #E8D5D0;
@@ -16,44 +17,47 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    .bannerBox{
+
+    .bannerBox {
       overflow: hidden;
-      padding-right: 120px;
-      .banner{
-        // background: url("@/assets/images/03e6d39b53555.webp") center no-repeat;
-        // background-size: 100%;
+      padding-right: 28px;
+      padding-top: 12vh;
+      .banner {
+        background: url("@/assets/images/03e6d39b53555.webp") center no-repeat;
+        background-size: contain;
         height: 100%;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        // transition: all 2s;
-        // left: 0;
-        // bottom: 0;
-        // &:hover{
-        //   left: -30px;
-        //   bottom: -20px;
-        // }
-        img {
-          width: 100%;
-          max-width: 1000px;
+        transition: all 2s;
+        left: 0;
+        bottom: 0;
+        width: 522px;
+        height: 518px;
+
+        &:hover{
+          left: -30px;
+          bottom: -20px;
         }
-        .fire{
+        .fire {
           position: absolute;
           height: auto;
-          width: 120px;
+          width: 166px;
           z-index: 1;
           transform: rotate(80deg);
-          right: -89px;
-          top: 185px;
+          right: -20%;
+          top: 18%;
         }
-        .fire2{
-          right: -76px;
-          top: 312px;
+
+        .fire2 {
+          width: 156px;
+          right: -16%;
+          top: 44%;
         }
       }
     }
-  
+
     .intro {
       padding-left: 28px;
       padding-top: 12vh;
@@ -62,17 +66,23 @@
         color: #61dafb;
         font-family: Heavy, Helvetica, Arial, sans-serif;
         transition: text-decoration .3s;
-        &:hover{
-          text-decoration:underline
+
+        &:hover {
+          text-decoration: underline
         }
       }
 
       .sometime {
+
         // typed.js 的光标样式
-        & + span {
+        &+span {
           color: #bd0000 !important;
         }
-        font-family: Heavy, Helvetica, Arial, sans-serif;
+
+        font-family: Heavy,
+        Helvetica,
+        Arial,
+        sans-serif;
       }
 
       p {
@@ -86,13 +96,14 @@
 
       }
     }
+
     .next {
       display: flex;
       align-items: center;
       justify-content: center;
 
       .handDown {
-        > div {
+        >div {
           position: relative;
           display: inline-flex;
           justify-content: center;
@@ -126,12 +137,31 @@
   }
 
   @media screen and (max-width: 992px) {
-    &{
+    & {
       padding-top: 80px;
       height: calc(100vh - 80px);
     }
+
     .content {
-      border-radius: 0;
+      padding: 0 20px;
+      .bannerBox{
+        padding-top: 4vh;
+        .banner {
+          width: 422px;
+          height: 418px;
+          .fire {
+            width: 126px;
+            right: -22%;
+            top: 18%;
+          }
+  
+          .fire2 {
+            width: 116px;
+            right: -18%;
+            top: 44%;
+          }
+        }
+      }
       .intro {
         padding-top: 4vh;
 
@@ -139,26 +169,31 @@
           font-size: 2em;
         }
       }
-      .bannerBox{
-        .banner{
-          .fire{
-            width: 106px;
-            right: -67px;
-            top: 237px;
-          }
-          .fire2{
-            right: -62px;
-            top: 362px;
-          }
-        }
-      }
 
-      
     }
   }
 
   @media screen and (max-width: 768px) {
     .content {
+      padding: 0 20px;
+      .bannerBox{
+        padding-right: 20px;
+        .banner {
+          width: 362px;
+          height: 358px;
+          .fire {
+            width: 106px;
+            right: -22%;
+            top: 18%;
+          }
+  
+          .fire2 {
+            width: 96px;
+            right: -18%;
+            top: 44%;
+          }
+        }
+      }
       .intro {
         padding-left: 20px;
 
@@ -166,41 +201,9 @@
           line-height: 1.4em;
           font-size: 1.7em;
         }
-
-      }
-      .bannerBox{
-        .banner{
-          .fire{
-            width: 86px;
-            right: -67px;
-            top: 237px;
-          }
-          .fire2{
-            right: -54px;
-            top: 342px;
-          }
-        }
       }
     }
   }
 
-  @media screen and (max-width: 414px) {
-    .content {
-      .bannerBox{
-        .banner{
-          .fire{
-            width: 86px;
-            right: -56px;
-            top: 68px;
-          }
-          .fire2{
-            right: -46px;
-            top:154px;
-          }
-        }
-      }
-    }
-  }
 
 }
-
