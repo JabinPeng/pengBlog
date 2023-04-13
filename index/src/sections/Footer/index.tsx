@@ -3,7 +3,7 @@ import styles from './index.module.scss'
 import { Tooltip, Row, Col } from "antd";
 import Paragraph from "@/components/Paragraph";
 import { techs, share, toysLottie } from "./constants";
-import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 import useLottie from "@/hooks/useLottie";
 
 
@@ -20,10 +20,12 @@ const Footer = () => {
     <footer className={styles.footer} id="contact">
       <Row className={styles.content}>
         <Col span={24} md={12} className={styles.left}>
-          <Fade left>
+          <Slide top>
             <div className={styles.dog}>
-                <div ref={fireRef}></div>
+              <div ref={fireRef}></div>
             </div>
+          </Slide>
+          <Slide left>
             <div className={styles.techList}>
               <Paragraph>个人主页使用了：</Paragraph>
               {techs.map((tech) => (
@@ -42,10 +44,10 @@ const Footer = () => {
                 鄂ICP备18004957号
               </a>
             </p>
-          </Fade>
+          </Slide>
         </Col>
         <Col span={24} md={12} className={styles.right}>
-          <Fade right>
+          <Slide right>
             <div className={styles.shareList}>
               {share.map((s) => (
                 <img key={s.url} src={s.image} onClick={() => goLink(s.url)} alt="share" />
@@ -56,7 +58,7 @@ const Footer = () => {
                 鄂ICP备18004957号
               </a>
             </p>
-          </Fade>
+          </Slide>
         </Col>
       </Row>
     </footer>
