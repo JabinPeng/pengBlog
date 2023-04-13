@@ -19,10 +19,11 @@ const Nav: FC = () => {
     console.log(toEl);
     
     const $toEl = document.querySelector(toEl);
-    setActiveItem(toEl);
-    setLeft(left)
+  
     if ($toEl) {
       $toEl.scrollIntoView({ behavior: "smooth" });
+      setActiveItem(toEl);
+      setLeft(left)
     }
   };
 

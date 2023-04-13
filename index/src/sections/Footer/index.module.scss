@@ -1,0 +1,132 @@
+.footer{
+  padding: 70px 58px 72px;
+  .content{
+    width: 100%;
+    background: rgba(217,217,217,0.3);
+    border-radius: 15px;
+    height: 287px;
+    display: flex;
+    overflow: hidden;
+    .left{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-left: 10%;
+      .dog{
+        display: block;
+        width: 120px;
+        div{
+          width: 100%;
+        }
+      }
+      .techList {
+        width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 86px;
+        img {
+          padding: 8px;
+          height: 20px;
+        }
+      }
+      .record {
+        width: 320px;
+        a {
+          color: rgba(37,37,37,0.5);
+          text-decoration: none;
+          transition: text-decoration 1s;
+          font-family: Siyuan, Helvetica, Arial, sans-serif;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .right{
+      .shareList {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        height: 100%;
+        img {
+          cursor: pointer;
+          margin: 0 10px 20px 10px;
+          padding: 8px;
+          height: 16px;
+          &:hover {
+            animation: wobble 1s ease-in-out;
+          }
+        }
+      }
+      .record {
+        display: none;
+        a {
+          color: rgba(37,37,37,0.5);
+          text-decoration: none;
+          transition: text-decoration 1s;
+          font-family: Siyuan, Helvetica, Arial, sans-serif;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  
+  }
+  @media  screen and (max-width: 768px) {
+    .content{
+      .left{
+        padding-left: 0;
+        align-items: center;
+        .techList{
+          width: auto;
+          margin-bottom: 12px;
+        }
+        .record {
+          display: none;
+        }
+      }
+      .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .shareList{
+          height: 70%;
+        }
+        .record {
+          display: block;
+        }
+      }
+    }
+  }
+  @keyframes wobble {
+    0% {
+      transform: translateY(0%);
+    }
+  
+    15% {
+      transform: translateY(-25%);
+    }
+  
+    30% {
+      transform: translateY(20%);
+    }
+  
+    45% {
+      transform: translateY(-15%);
+    }
+  
+    60% {
+      transform: translateY(10%);
+    }
+  
+    75% {
+      transform: translateY(-5%);
+    }
+  
+    100% {
+      transform: translateY(0%);
+    }
+  }
+}

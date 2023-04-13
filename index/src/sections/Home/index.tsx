@@ -6,7 +6,6 @@ import useTyped from '@/hooks/useTyped'
 import useLottie from "@/hooks/useLottie"
 import {arrowDownLottie, fireLottie} from './constants'
 import classNames from "classnames";
-// import banner from '@/assets/images/03e6d39b53555.webp'
 
 
 const strings = ["聊聊技术。", "吹吹水。", "打打游戏。"];
