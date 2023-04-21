@@ -81,7 +81,6 @@ module.exports = {
     ],
     "sidebar": {
       "/docs/jottings/": [
-        // "vueBuild",
         "mobile",
         "Git",
         "HarmonyOS",
@@ -89,7 +88,6 @@ module.exports = {
         "BOM",
         "particles",
         // "genealogy",
-        "carousel",
         "whirligig",
         "filter",
         "scrollTemp",
