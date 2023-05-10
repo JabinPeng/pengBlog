@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import styles from "./styles.module.scss";
+import loadingIcon from "@/assets/svg/loading.svg";
 
 interface Props {
   title?: string;
@@ -10,9 +11,9 @@ const Loading: FC<Props> = (props) => {
 
   return (
     <div className={styles.loading}>
-      <div className={styles.boxLoading}></div>
-      {title && <p>{title}</p>}
-    </div>
+       <img src={loadingIcon} alt="loading" />
+    {title && <p>{title}</p>}
+  </div>
   );
 };
 

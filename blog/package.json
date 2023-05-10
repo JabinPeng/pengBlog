@@ -6,6 +6,9 @@
     "dev": "vuepress dev . --temp .temp",
     "build": "vuepress build ."
   },
+  "engines": {
+    "node": "<=14.21.3"
+  },
   "devDependencies": {
     "async-validator": "^1.11.5",
     "node-sass": "^4.12.0",

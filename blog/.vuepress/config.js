@@ -1,6 +1,6 @@
 module.exports = {
   "title": "饭团也有春天",
-  "description": "",
+  "description": "JabinPeng的博客",
   "dest": "public",
   "base": "/blog/",
   "locales": {
@@ -71,6 +71,10 @@ module.exports = {
         "text": "联系我吧",
         "icon": "reco-message",
         "items": [
+          {
+            "text": "Me",
+            "link": "https://www.zpzpup.com",
+          },
           {
             "text": "GitHub",
             "link": "https://github.com/JabinPeng",
@@ -143,12 +147,6 @@ module.exports = {
       }
     },
     "friendLink": [
-      // {
-      //   "title": "饭团也有春天",
-      //   "desc": "没有梦想，也能远方",
-      //   "email": "690996726@qq.com",
-      //   "link": "https://www.zpzpup.com/blog"
-      // },
       {
         "title": "Lucifer",
         "desc": "Everything can be expected in the future.",
@@ -168,7 +166,7 @@ module.exports = {
     "lastUpdated": "Last Updated",
     "author": "Jabin",
     "authorAvatar": "https://www.zpzpup.com/assets/image/avatar.png",
-    "record": "鄂ICP备18004957号-2",
+    "record": "鄂ICP备18004957号",
     "startYear": "2018"
   },
   "configureWebpack": {
@@ -183,7 +181,7 @@ module.exports = {
   },
   "plugins": [
     ["sakura", {
-      num: 10,  // 默认数量
+      num: 16,  // 默认数量
       show: true,
       zIndex: 2,
       img: {
