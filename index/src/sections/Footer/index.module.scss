@@ -33,7 +33,7 @@
       .record {
         width: 320px;
         a {
-          color: rgba(37,37,37,0.5);
+          color: $fontDescColor;
           text-decoration: none;
           transition: text-decoration 1s;
           font-family: Siyuan, Helvetica, Arial, sans-serif;
@@ -62,7 +62,7 @@
       .record {
         display: none;
         a {
-          color: rgba(37,37,37,0.5);
+          color: $fontDescColor;
           text-decoration: none;
           transition: text-decoration 1s;
           font-family: Siyuan, Helvetica, Arial, sans-serif;

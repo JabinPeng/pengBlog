@@ -1,5 +1,3 @@
-$fontColor: rgba(37, 37, 37, .9);
-
 .nav {
   padding: 40px 74px 40px 78px;
   position: fixed;
@@ -69,6 +67,7 @@ $fontColor: rgba(37, 37, 37, .9);
       font-size: 1.5em;
       font-weight: bold;
       color: $fontColor;
+      white-space: nowrap;
 
       .namegrey {
         color: rgba(37, 37, 37, .25);
@@ -102,10 +101,13 @@ $fontColor: rgba(37, 37, 37, .9);
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 78px;
+    top: 80px;
     left: 0;
     right: 0;
     z-index: 3;
+    li{
+      display: none;
+    }
   }
 
   li,
@@ -113,7 +115,7 @@ $fontColor: rgba(37, 37, 37, .9);
     font-family: Siyuan, Helvetica, Arial, sans-serif;
     color: $fontColor;
     &:hover {
-      color: #E8D5D0;
+      color: #BAE8E8;
     }
   }
 
@@ -160,9 +162,43 @@ $fontColor: rgba(37, 37, 37, .9);
       }
       li {
         display: none;
-
         &.navBtn {
           display: block;
+          .menu {
+            width: 28px;
+            height: 28px;
+            vertical-align: middle;
+          }
+          .closeButton{
+            position: relative;
+            width: 28px;
+            height: 28px;
+            &:hover{
+              &:after{
+                transform: rotate(-90deg);
+              }
+              &:before{
+                transform: rotate(-90deg);
+              }
+            }
+            &:after,&:before{
+              content: "";
+              position: absolute;
+              transform-origin: center;
+              top: 0;
+              left: 12px;
+              transform: rotate(-45deg);
+              display: block;
+              height: 28px;
+              width: 4px;
+              background-color: $fontColor;
+              transition: all .25s ease-out;
+              will-change: transform;
+            }
+            &:after {
+              transform: rotate(-135deg);
+            }
+          }
         }
       }
     }
@@ -173,16 +209,22 @@ $fontColor: rgba(37, 37, 37, .9);
       box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
       background: white;
       font-weight: bold;
-
+      opacity: 1;
+      transition: all .25s ease-out;
       li {
-        text-align: center;
         background: white;
         letter-spacing: 2px;
+        transition: all .25s ease-out;
+        padding: 16px;
+        display: block;
+        &:hover{
+          background-color: #BAE8E8;
+          color:$fontColor;
+        }
 
         &.active {
-          padding: 6px 12px;
+          padding: 16px;
           background: #3B3B3B;
-          border-radius: 8px;
           color: #FFFFFF;
         }
       }
