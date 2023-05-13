@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.scss';
 import workspace from "@/assets/images/page-hero-workspace.webp";
 import avatar from "@/assets/images/avatar.webp";
-import Fade from "react-reveal/Fade"
+import Fade from 'react-reveal/Fade';
 
 type Props = {}
 
@@ -13,7 +13,7 @@ const About = (props: Props) => {
         <img src={workspace} alt="workspace" />
       </div>
       <div className={styles.info}>
-        <Fade bottom>
+       <Fade bottom>
           <div className={styles.avatar}>
             <img src={avatar} alt="" />
           </div>
