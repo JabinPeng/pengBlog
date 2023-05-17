@@ -4,7 +4,9 @@
   height: calc(100vh - 120px);
   background-color: #fff;
   transform: translateZ(0);
-
+  @media screen and (max-width: 992px) {
+    padding-top: 80px;
+  }
   .content {
     padding: 0 58px;
     border-radius: 20px;

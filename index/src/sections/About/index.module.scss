@@ -1,10 +1,13 @@
 .abort{
   padding-top: 120px;
+  @media screen and (max-width: 992px) {
+    padding-top: 80px;
+  }
   .workspace{
     max-width: 100%;
     height: 540px;
     min-height: 80px;
-    background: linear-gradient(0deg, #ffd803 25%, transparent 25%);
+    background: linear-gradient(0deg, $pramary-1 25%, transparent 25%);
     margin-bottom: 64px;
     img{
       width: 100%;
@@ -18,6 +21,8 @@
   .info{
     background-image: url("@/assets/svg/bgspot.svg");
     padding-bottom: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
     .avatar{
       margin: 0 auto;
       width: 200px;
@@ -39,6 +44,7 @@
       margin-bottom: $margin12;
       font-size: 29px;
       text-align: center;
+ 
     }
     h3{
       color: $fontColor;
@@ -51,8 +57,10 @@
     p{
       color: $fontColor;
       font-size: 16px;
-      margin: 4px 0;
-      text-align: center;
+      margin: 4px auto;
+      display: block;
+      line-height: 26px;
+      max-width: 744px;
       a {
         color: #0060bf;
         cursor: pointer;
@@ -63,6 +71,46 @@
         }
       }
     }
+    .button{
+      transition: all .1s ease;
+      box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+      width: 200px;
+      margin: 40px auto;
+      text-align: center;
+      border-radius: 8px;
+      position: relative;
+      color: rgba(255,255,255,1);
+      background-color: rgba(219,87,5,1);
+      font-size: 30px;
+      display: block;
+      padding: 8px;
+      cursor: pointer;
+      &:active{
+        box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 3px;
+      }
+    }
   }
 }
-
+    // animation-name: subtitleClip;
+    // animation-duration: 3s;
+    // animation-delay: .5s;
+    // animation-fill-mode: forwards;
+    // animation-timing-function: linear;
+    // opacity: 0;
+@keyframes subtitleClip {
+  0% {
+      clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  }
+  45% {
+      clip-path: polygon(0% 0%, 45% 0%, 35% 100%, 0% 100%);
+  }
+  75% {
+      clip-path: polygon(0% 0%, 85% 0%, 85% 100%, 0% 100%);
+  }
+  100% {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      opacity: 1;
+  }
+}

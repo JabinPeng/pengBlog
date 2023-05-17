@@ -6,3 +6,4 @@ declare module "react-reveal/RubberBand";
 declare module "react-reveal/Flip";
 declare module "react-reveal/Slide";
 declare module "react-reveal/Reveal";
+declare module "react-reveal/Jello";

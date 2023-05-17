@@ -1,5 +1,54 @@
-.project{
+.project {
   padding-top: 120px;
-  height: 500px;
-  background-color: #F3B2B0;
+  @media screen and (max-width: 992px) {
+    padding-top: 80px;
+  }
+  .workspace{
+    max-width: 100%;
+    height: 540px;
+    min-height: 80px;
+    background: linear-gradient(0deg, $pramary-1 25%, transparent 25%);
+    margin-bottom: 64px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      -webkit-user-drag: none;
+      -moz-user-drag: none;
+      -ms-user-drag: none;
+    }
+  }
+  .projcetInfo{
+    text-align: center;
+    .headline {
+      display: inline-block;
+      position: relative;
+      background: linear-gradient(to bottom, transparent 0, transparent 55%, $pramary-4 55%, $pramary-4 100%);
+      color: $fontColor;
+      font-size: 45.6px;
+      margin-bottom: $margin24;
+      font-weight: 500;
+      line-height: 68px;
+      &:after {
+        content: "";
+      }
+  
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 1%;
+        height: 12%;
+        width: 90%;
+        background: linear-gradient(to right, #eb9a04 0, #eb9a04 25%, $pramary-4 25%, $pramary-4 35%, #eb9a04 35%, #eb9a04  100%);
+      }
+    }
+    .desc{
+      font-size: 16px;
+      color: $fontColor;
+      margin: 4px auto;
+    }
+  }
+
+ 
 }
