@@ -6,13 +6,15 @@
   justify-content: center;
   align-items: center;
   --elastic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  --x: 296px;
-  --y: 145.5px;
+  --x: 0px;
+  --y: 0px;
   --t: rgba(255, 255, 255, 0.001);
   --lightest: #f897d5;
   --light: #f567c2;
   --dark: #755ad0;
   --darkest: #1a2a6c;
+  --width: 296px;
+  --height: 145.5px;
   overflow: hidden;
   .inner {
     display: inline-block;
@@ -107,11 +109,11 @@
           box-shadow 1000ms var(--elastic);
         transform: translate(
             clamp(5%, calc(var(--x) - 50%), 550%),
-            clamp(1rem, calc(var(--y) - 50%), 5rem)
+            clamp(16px, calc(var(--y) - 50%), 80px)
           )
           scale(1.25);
-        box-shadow: 0 0 0 0.05rem #fff, 0 -6rem 0 1.25rem #fff,
-          0 6rem 0 1.25rem #fff;
+        box-shadow: 0 0 0 0.8px #fff, 0 -96px 0 20px #fff,
+          0 96px 0 20px #fff;
       }
     }
     &:active {
@@ -119,13 +121,13 @@
     }
     &:active:hover ~ .blob {
       &:before {
-        box-shadow: 0 0 0 0 #fff, 0 -5rem 0 1.75rem #fff,
-          0 5rem 0 1.75rem #fff;
+        box-shadow: 0 0 0 0 #fff, 0 -80px 0 28px #fff,
+          0 80px 0 28px #fff;
         transition: transform 500ms var(--elastic),
           box-shadow 500ms var(--elastic);
         transform: translate(
             clamp(5%, calc(var(--x) - 50%), 550%),
-            clamp(calc(50% + 1rem), calc(var(--y) - 50%), calc(50% + 1.5rem))
+            clamp(calc(50% + 16px), calc(var(--y) - 50%), calc(50% + 24px))
           )
           scale(1);
       }
@@ -145,7 +147,7 @@
     &:after {
       content: "";
       position: absolute;
-      background: #000;
+      background: $bgColor;
     }
     &:before {
       width: 15%;
@@ -154,23 +156,23 @@
       transition: transform 750ms var(--elastic),
         box-shadow 500ms var(--elastic);
       aspect-ratio: 1/1;
-      box-shadow: 0 0 0 0.75rem #fff, 0 -8rem 0 -2rem #fff, 0 8rem 0 -2rem #fff;
+      box-shadow: 0 0 0 12px #fff, 0 -128px 0 -32px #fff, 0 128px 0 -32px #fff;
       left: 0;
       top: 0;
       border-radius: 100%;
       transform: translate(
           clamp(10%, calc(var(--x) - 50%), 550%),
-          clamp(1rem, calc(var(--y) - 50%), 5rem)
+          clamp(16px, calc(var(--y) - 50%), 80px)
         )
         scale(0);
     }
     &:after {
-      width: calc(100% - 4rem);
-      height: calc(100% - 4rem);
-      top: 2rem;
-      left: 2rem;
-      border-radius: 5rem;
-      box-shadow: 0 0 0 8rem #fff;
+      width: calc(100% - 64px);
+      height: calc(100% - 64px);
+      top: 32px;
+      left: 32px;
+      border-radius: 80px;
+      box-shadow: 0 0 0 128px #fff;
     }
   }
   

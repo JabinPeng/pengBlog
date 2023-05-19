@@ -49,6 +49,64 @@
       margin: 4px auto;
     }
   }
-
+  .projectList{
+    width: 992px;
+    margin: $margin24 auto;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+   }
+    .projectItem{
+      padding: $margin24;
+      border-radius: 24px;
+      box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000;
+      transition: all .3s;
+      @media screen and (min-width: 768px) {
+        &:hover{
+          box-shadow: 0 0 #0000,0 0 #0000, 0 8px 30px rgba(0,0,0,.12);
+        }
+      }
+     
+      .projectImg{
+        height: 270px;
+        margin-bottom: $margin24;
+        border-radius: 12px;
+        img{
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+        }
+        @media screen and (max-width: 1024px) {
+           height: 180px;
+        }
+        @media screen and (max-width: 768px) {
+           height: 210px;
+        }
+      }
+      .projectInfo{
+        .title {
+          color: $fontColor;
+          font-weight: 700;
+          margin: 8px auto;
+          font-size: 16px;
+          line-height: 19.2px;
+        }
+        span{
+          display: inline-block;
+          background-color: #bae8e8;
+          padding: 2px 8px;
+          font-size: 14px;
+          color: #FFFFFF;
+          border-radius: 8px;
+          line-height: 20px;
+        }
+        .desc {
+          color: $fontDescColor;
+          font-size: 16px;
+          margin: 4px auto;
+          line-height: 24px;
+        }
+      }
+    }
+  }
  
 }
