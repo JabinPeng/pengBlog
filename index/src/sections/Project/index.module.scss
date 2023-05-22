@@ -61,6 +61,10 @@
       border-radius: 24px;
       box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000;
       transition: box-shadow .3s;
+      cursor: pointer;
+      a{
+        text-decoration: none;
+      }
       @media screen and (min-width: 768px) {
         padding:24px;
         margin: 8px;
@@ -77,6 +81,7 @@
           width: 100%;
           height: 100%;
           border-radius: 12px;
+          object-fit: cover;
         }
       }
       .projectInfo{

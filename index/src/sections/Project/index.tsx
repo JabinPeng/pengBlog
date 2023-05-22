@@ -2,29 +2,20 @@ import React from 'react';
 import styles from './index.module.scss';
 import rocket from "@/assets/images/cartoon-rocket.webp";
 import { Space } from "antd"
+import { projectList } from "./constants";
 
 type Props = {}
 
-const Project = (props: Props) => {
-  const projectList = [
-    {
-      img: 'https://andycao.me/static/images/project/cyvertex-cover.jpg',
-      alt: '',
-      title: 'Cyber Vertex News Portal',
-      desc: 'The Cyber Vertex project integrates cybersecurity and digital forensics news data and learning resources. Provide a one-stop network security-related content provision platform. It also provides some social functions, to help learners to communicate and learn in a technical community. It may promote the development of cybersecurity and digital forensics field.',
-      technical: 'web & mobile',
-      href: ''
-    },
-    {
-      img: 'https://andycao.me/static/images/project/cyvertex-cover.jpg',
-      alt: '',
-      title: 'Cyber Vertex News Portal',
-      desc: 'The Cyber Vertex project integrates cybersecurity and digital forensics news data and learning resources. Provide a one-stop network security-related content provision platform. It also provides some social functions, to help learners to communicate and learn in a technical community. It may promote the development of cybersecurity and digital forensics field.',
-      technical: 'web & mobile',
-      href: ''
-    }
-  ]
+export type projectListProps = {
+  img: string;
+  alt: string;
+  title: string;
+  desc: string;
+  technical: string;
+  href: string;
+}
 
+const Project = (props: Props) => {
 
   return (
     <div className={styles.project} id="project">
@@ -36,8 +27,8 @@ const Project = (props: Props) => {
         <p className={styles.desc}>一些好玩的项目</p>
       </div>
       <div className={styles.projectList}>
-          { projectList.map((item, i) => (
-              <div className={styles.projectItem} key={item.title + i}>  
+          { projectList.map((item:projectListProps, i:number) => (
+              <div className={styles.projectItem} key={item.title + i.toString()}>  
                 <a href={item.href} target="_blank">
                 <div className={styles.projectImg}>
                   <img src={item.img} alt={item.alt} />
