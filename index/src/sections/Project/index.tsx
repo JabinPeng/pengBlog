@@ -3,6 +3,7 @@ import styles from './index.module.scss';
 import rocket from "@/assets/images/cartoon-rocket.webp";
 import { Space } from "antd"
 import { projectList } from "./constants";
+import ImageContainer from "@/components/ImageContainer";
 
 type Props = {}
 
@@ -31,7 +32,12 @@ const Project = (props: Props) => {
               <div className={styles.projectItem} key={item.title + i.toString()}>  
                 <a href={item.href} target="_blank">
                 <div className={styles.projectImg}>
-                  <img src={item.img} alt={item.alt} />
+                  <ImageContainer
+                      src={item.img}
+                      thumb="https://dummyimage.com/416x270/000000/fff.png&text=^_^"
+                      alt={item.alt}
+                    />
+                  {/* <img src={item.img} alt={item.alt} /> */}
                 </div>
                 <div className={styles.projectInfo}>
                   <Space direction="vertical">
