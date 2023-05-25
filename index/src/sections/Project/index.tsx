@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './index.module.scss';
 import rocket from "@/assets/images/cartoon-rocket.webp";
 import { Space } from "antd"
 import { projectList } from "./constants";
 import ImageContainer from "@/components/ImageContainer";
+import ProjectDetail from "../ProjectDetail";
 
 type Props = {}
 
@@ -17,6 +18,10 @@ export type projectListProps = {
 }
 
 const Project = (props: Props) => {
+  const [visible, setVisible] = useState<boolean>(false);
+  const openDetail = (item:projectListProps) => {
+    setVisible(true)
+  } 
 
   return (
     <div className={styles.project} id="project">
@@ -30,7 +35,8 @@ const Project = (props: Props) => {
       <div className={styles.projectList}>
           { projectList.map((item:projectListProps, i:number) => (
               <div className={styles.projectItem} key={item.title + i.toString()}>  
-                <a href={item.href} target="_blank">
+                {/* <a href={item.href} target="_blank"> */}
+                <a onClick={() => openDetail(item)} rel="noreferrer">
                 <div className={styles.projectImg}>
                   <ImageContainer
                       src={item.img}
@@ -50,6 +56,7 @@ const Project = (props: Props) => {
               </div>
           )) }
       </div>
+      <ProjectDetail visible={visible} setVisible={setVisible}/>
     </div>
   )
 }

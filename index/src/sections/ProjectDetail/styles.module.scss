@@ -1,0 +1,125 @@
+.ProjectDetail{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin:140px auto;
+  width: 72%;
+  z-index: 3;
+  border-radius: 24px;
+  box-shadow: 0 0 #0000,0 0 #0000, 0 8px 30px rgba(0,0,0,.12);
+  background-color: #fff;
+  overflow:none auto;
+  padding: $margin24 0;
+  display: flex;
+  flex-direction: column;
+  .centerWidth{
+    width: 80%;
+    margin: 0 auto;
+    .close{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 42px;
+      .closeButton{
+        position: relative;
+        width: 42px;
+        height: 42px;
+        &:hover{
+          &:after{
+            transform: rotate(-90deg);
+          }
+          &:before{
+            transform: rotate(-90deg);
+          }
+        }
+        &:after,&:before{
+          content: "";
+          position: absolute;
+          transform-origin: center;
+          top: 0;
+          left: 12px;
+          transform: rotate(-45deg);
+          display: block;
+          height: 42px;
+          width: 8px;
+          background-color: $fontColor;
+          transition: all .25s ease-out;
+          will-change: transform;
+        }
+        &:after {
+          transform: rotate(-135deg);
+        }
+      }
+    }
+    h2{
+      margin: 12px 0;
+      font-size: 30px;
+      color:$fontColor;
+      line-height: 44.4px;
+      font-weight: 700;
+    }
+    h3{
+      margin: 12px 0;
+      font-size: 24px;
+      color:$fontColor;
+      line-height: 36px;
+      font-weight: 700;
+    }
+    span{
+      display: inline-block;
+      background-color: $pramary-4;
+      padding: 2px 8px;
+      font-size: 14px;
+      color: #FFFFFF;
+      border-radius: 8px;
+      line-height: 20px;
+      margin-bottom: 32px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+    }
+    ul{
+      display: flex;
+      li{
+        background-color: $pramary-5;
+        padding: 2px 8px;
+        font-size: 14px;
+        color: #FFFFFF;
+        border-radius: 8px;
+        line-height: 20px;
+        margin-right: 8px;
+      }
+    }
+    .paragraph{
+      color: #4e5064;
+      font-size: 16px;
+      margin: 4px auto;
+      line-height: 24px;
+    }
+    .image{
+      width: 100%;
+      height: 66.8%;
+    }
+  }
+  .container{
+     flex: 1;
+     padding-top: 24px;
+     overflow-y: auto;
+     overflow-x: hidden;
+     height: calc(100% - 72px);
+    .banner{
+      width: 100%;
+      height: 30vh;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -webkit-user-drag: none;
+        -moz-user-drag: none;
+        -ms-user-drag: none;
+      }
+    }
+  }
+  
+}
