@@ -1,19 +1,28 @@
-.ProjectDetail{
+.mark {
   position: fixed;
+  z-index: 3;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  margin:140px auto;
-  width: 72%;
-  z-index: 3;
-  border-radius: 24px;
-  box-shadow: 0 0 #0000,0 0 #0000, 0 8px 30px rgba(0,0,0,.12);
-  background-color: #fff;
-  overflow:none auto;
-  padding: $margin24 0;
-  display: flex;
-  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.12);
+  .ProjectDetail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:140px auto;
+    width: 72%;
+    z-index: 4;
+    border-radius: 24px;
+    box-shadow: 0 0 #0000,0 0 #0000, 0 8px 30px rgba(0,0,0,.12);
+    background-color: #fff;
+    overflow:none auto;
+    padding: $margin24 0;
+    display: flex;
+    flex-direction: column;
+  }
   .centerWidth{
     width: 80%;
     margin: 0 auto;
@@ -22,10 +31,23 @@
       justify-content: flex-end;
       align-items: center;
       height: 42px;
+      margin-bottom: $margin24;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 12px;
+        .closeButton{
+          width: 28px;
+          height: 28px;
+          &:after,&:before{
+            height: 28px;
+            width: 4px;
+          }
+        }
+      }
       .closeButton{
         position: relative;
         width: 42px;
         height: 42px;
+        cursor:  pointer;
         &:hover{
           &:after{
             transform: rotate(-90deg);
@@ -81,6 +103,7 @@
     }
     ul{
       display: flex;
+      flex-wrap: wrap;
       li{
         background-color: $pramary-5;
         padding: 2px 8px;
@@ -89,6 +112,7 @@
         border-radius: 8px;
         line-height: 20px;
         margin-right: 8px;
+        margin-bottom: 8px;
       }
     }
     .paragraph{
@@ -99,7 +123,11 @@
     }
     .image{
       width: 100%;
-      height: 66.8%;
+      height: 66.8vh;
+      margin-bottom: 32px;
+      @media screen and (max-width: 992px) {
+        height: 26.8vh;
+      }
     }
   }
   .container{
@@ -108,9 +136,15 @@
      overflow-y: auto;
      overflow-x: hidden;
      height: calc(100% - 72px);
+     @media screen and (max-width: 992px) {
+      padding-top: 12px;
+     }
     .banner{
       width: 100%;
       height: 30vh;
+      @media screen and (max-width: 992px) {
+        height: 15vh;
+      }
       img{
         width: 100%;
         height: 100%;

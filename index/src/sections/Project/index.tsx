@@ -8,18 +8,31 @@ import ProjectDetail from "../ProjectDetail";
 
 type Props = {}
 
+type imagesArrProps = {
+  alt: string;
+  url: string;
+  thumb: string;
+}
+
 export type projectListProps = {
   img: string;
   alt: string;
   title: string;
   desc: string;
-  technical: string;
   href: string;
+  projectId: number;
+  tech: string;
+  technical?: string[];
+  imagesArr?: imagesArrProps[];
+  content?: string;
 }
 
 const Project = (props: Props) => {
   const [visible, setVisible] = useState<boolean>(false);
+  const [projectId, setProjectId] = useState<number | undefined>();
+  
   const openDetail = (item:projectListProps) => {
+    setProjectId(item.projectId)
     setVisible(true)
   } 
 
@@ -34,21 +47,19 @@ const Project = (props: Props) => {
       </div>
       <div className={styles.projectList}>
           { projectList.map((item:projectListProps, i:number) => (
-              <div className={styles.projectItem} key={item.title + i.toString()}>  
-                {/* <a href={item.href} target="_blank"> */}
+              <div className={styles.projectItem} key={item.projectId}>  
                 <a onClick={() => openDetail(item)} rel="noreferrer">
                 <div className={styles.projectImg}>
                   <ImageContainer
                       src={item.img}
-                      thumb="https://dummyimage.com/416x270/000000/fff.png&text=^_^"
+                      thumb="https://dummyimage.com/832x540/000/fff.png&text=loading"
                       alt={item.alt}
                     />
-                  {/* <img src={item.img} alt={item.alt} /> */}
                 </div>
                 <div className={styles.projectInfo}>
                   <Space direction="vertical">
                     <h2 className={styles.title}>{item.title}</h2>
-                    <span>{item.technical}</span>
+                    <span>{item.tech}</span>
                     <p className={styles.desc}>{item.desc}</p>
                   </Space>
                 </div>
@@ -56,7 +67,7 @@ const Project = (props: Props) => {
               </div>
           )) }
       </div>
-      <ProjectDetail visible={visible} setVisible={setVisible}/>
+      <ProjectDetail visible={visible} setVisible={setVisible} projectId={projectId}/>
     </div>
   )
 }
