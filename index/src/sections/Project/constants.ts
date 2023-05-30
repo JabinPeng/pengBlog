@@ -1,20 +1,20 @@
 import { projectListProps } from './index';
-import Fs from '@/assets/images/FS-com-Data-Center-Enterprise-Telecom.png';
-import Fs1 from '@/assets/images/AP-N505-Cloud-Managed-Wi-Fi-6-1.png';
-import Fs2 from '@/assets/images/AP-N505-Cloud-Managed-Wi-Fi-6-2.png';
-import Fs3 from '@/assets/images/AP-N505-Cloud-Managed-Wi-Fi-6-3.png';
-import Fs4 from '@/assets/images/AP-N505-Cloud-Managed-Wi-Fi-6-4.png';
-import Fs5 from '@/assets/images/AP-N505-Cloud-Managed-Wi-Fi-6-5.png';
-import Community from '@/assets/images/FS-Community.png';
-import Community1 from '@/assets/images/FS-Community-List.png';
-import Community2 from '@/assets/images/FS-Community-Blog.png';
-import Community3 from '@/assets/images/FS-Community-Story.png';
-import CommunityLogin from '@/assets/images/FS-Community-Login.png';
-import RemapCity from '@/assets/images/RemapCity.png';
-import PISX from '@/assets/images/PISX.png';
-import CMS from '@/assets/images/FS-CMS.png';
-import CMSLogin from '@/assets/images/CMS-Login.png';
-import CommunityCMS from '@/assets/images/FS-Community-backstage.png';
+import Fs from '@/assets/images/FS-com-Data-Center-Enterprise-Telecom.webp';
+import Fs1 from '@/assets/images/AP-N505-Cloud-Managed-Wi-Fi-6-1.webp';
+import Fs2 from '@/assets/images/AP-N505-Cloud-Managed-Wi-Fi-6-2.webp';
+import Fs3 from '@/assets/images/AP-N505-Cloud-Managed-Wi-Fi-6-3.webp';
+import Fs4 from '@/assets/images/AP-N505-Cloud-Managed-Wi-Fi-6-4.webp';
+import Fs5 from '@/assets/images/AP-N505-Cloud-Managed-Wi-Fi-6-5.webp';
+import Community from '@/assets/images/FS-Community.webp';
+import Community1 from '@/assets/images/FS-Community-List.webp';
+import Community2 from '@/assets/images/FS-Community-Blog.webp';
+import Community3 from '@/assets/images/FS-Community-Story.webp';
+import CommunityLogin from '@/assets/images/FS-Community-Login.webp';
+import RemapCity from '@/assets/images/RemapCity.webp';
+import PISX from '@/assets/images/PISX.webp';
+import CMS from '@/assets/images/FS-CMS.webp';
+import CMSLogin from '@/assets/images/CMS-Login.webp';
+import CommunityCMS from '@/assets/images/FS-Community-backstage.webp';
 
 const thumb = 'https://dummyimage.com/832x540/000/fff.png&text=loading';
 

@@ -23,6 +23,7 @@ const ProjectDetail = (props: Props) => {
     return () => {
       if ($toEl) {
         $toEl.scrollTop = 0
+        setData(undefined)
       }
     }
   }, [visible])
