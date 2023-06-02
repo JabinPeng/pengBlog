@@ -100,6 +100,22 @@
       }
     }
   }
+
+  @media  screen and (max-width: 390px) {
+    .content{
+      .left{
+        padding: 0 12px;
+      }
+      .right{
+        .shareList {
+          img{
+            margin: 0 5px 20px 5px;
+          }
+        }
+      }
+    }
+  }
+
   @keyframes wobble {
     0% {
       transform: translateY(0%);
