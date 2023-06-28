@@ -11,7 +11,7 @@ import useLottie from "@/hooks/useLottie";
 
 const Footer = () => {
 
-  const fireRef = useLottie(toysLottie);
+  const toysRef = useLottie(toysLottie);
 
   const goLink = (url: string) => {
     window.location.href = url
@@ -22,7 +22,7 @@ const Footer = () => {
         <Col span={24} md={12} className={styles.left}>
           <Slide top>
             <div className={styles.dog}>
-              <div ref={fireRef}></div>
+              <div ref={toysRef}></div>
             </div>
           </Slide>
           <Slide left>
