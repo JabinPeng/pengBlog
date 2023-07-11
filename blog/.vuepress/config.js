@@ -23,7 +23,7 @@ module.exports = {
         "content": "width=device-width,initial-scale=1,user-scalable=no"
       }
     ],
-    ["script", { src: "/assets/js/bodyClick.js" }],
+    ["script", { src: "/assets/js/mouseCss.js" }],
     ["script", { src: "/assets/js/51total.js" }],
   ],
   "theme": "jabinblog",
@@ -148,6 +148,33 @@ module.exports = {
       }
     },
     "friendLink": [
+      {
+        "title": "小溪里",
+        "desc": "盛瀚钦，沪江 CCtalk 前端开发工程师，Hi头像小程序作者，前腾讯云云开发布道师，Taro 社区的知识共建者，著有《从0到1开发一个智能头像识别小程序》小册。",
+        "logo": "https://www.xiaoxili.com/images/logo-white.png?imageView2/2/w/390",
+        "email": "shenghanqin@163.com",
+        "link": "https://www.xiaoxili.com"
+      },
+      {
+        "title": "风的小站—程序员的黑洞",
+        "desc": "🏠博客博客创建时间2020-02-26。🚩我90后。💌联系我📧&emsp;邮件：aliyun2333@126.com🌎&emsp;Github：unFbx🎯&emsp;微信公众号：程序员的黑洞🌠...",
+        "logo": "https://www.unfbx.com/usr/uploads/2023/05/3212308188.png",
+        "email": "aliyun2333@126.com",
+        "link": "https://www.unfbx.com/"
+      },
+      {
+        "title": "IMZXJ",
+        "desc": "你好 👋",
+        "email":"362896731@qq.com",
+        "logo": "https://www.xiaojun.im/logo.svg",
+        "link": "https://xiaojun.im"
+      },
+      {
+        "title": "碎言博客",
+        "desc": "Python Django JavaScript 学习讨论,我们是一群热爱Python、JavaScript的程序员，人生苦短，我用JavaScript！一个不会JavaScript的Python开发者不是一个好网管。",
+        "logo": "https://suiyan.cc/assets/images/avatar.jpg",
+        "link": "https://suiyan.cc/"
+      },
       {
         "title": "Lucifer",
         "desc": "Everything can be expected in the future.",
